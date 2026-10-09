@@ -1,0 +1,29 @@
+# Bu kartin CRC ile dogrulanmis mevcut ACC NVS kaydindan aktarilmistir.
+# x/y/z = bias[count], hassasiyet[count/g]. Ornek: x = null -> yalniz +X/-X yenilenir.
+# Katsayilar ortak fit edilir; eksen yenilenince egik kalite kontrolleri de yenilenir.
+# positive/negative_* = ham X,Y,Z ortalamasi[count]. null = o yuz olculecek.
+# accel_quality = RMS,max [g]. null = model henuz dogrulanmadi.
+# Gyro degerleri ilk yeni acilista olculup bu dosyaya aktarilacak.
+format = 1
+sensor = 112
+x = 546.472412109375, 16409.43359375
+y = 113.77349090576172, 16437.134765625
+z = 1128.4708251953125, 16747.64453125
+positive_x = 16941.227, -362.780, 1644.037
+negative_x = -15861.007, 14.893, 890.490
+positive_y = 1120.833, 16540.793, 1089.650
+negative_y = 1065.853, -16314.590, 1263.763
+positive_z = 1092.520, 312.090, 17865.620
+negative_z = 1143.380, -408.943, -15599.613
+accel_temperature = 30.03546905517578
+accel_quality = 0.0010273244697600603, 0.0014007150894030929
+# Eski son kayit toplam kaliteyi sakliyordu; tek tek egik hata sayilari bilinmiyor.
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = null
+gyro_y = null
+gyro_z = null
+gyro_temperature = null
+gyro_noise = null
+gyro_error = null

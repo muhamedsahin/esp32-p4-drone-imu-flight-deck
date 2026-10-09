@@ -1,0 +1,26 @@
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 112
+x = 546.472412109375, 16409.43359375
+y = 113.77349090576172, 16437.134765625
+z = 1128.4708251953125, 16747.64453125
+positive_x = 16941.227, -362.78, 1644.037
+negative_x = -15861.007, 14.893, 890.49
+positive_y = 1120.833, 16540.793, 1089.65
+negative_y = 1065.853, -16314.59, 1263.763
+positive_z = 1092.52, 312.09, 17865.62
+negative_z = 1143.38, -408.943, -15599.613
+accel_temperature = 30.03546905517578
+accel_quality = 0.0010273244697600603, 0.0014007150894030929
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 155.08399999999986
+gyro_y = 386.78400000000033
+gyro_z = -92.74199999999998
+gyro_temperature = 30.329819989816386
+gyro_noise = 0.04429363420048745, 0.11429485348015804, 0.037433766058148146
+gyro_error = 0.007236641221373995

@@ -1,0 +1,283 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"__ldgen_create_target",
+			"idf_build_executable",
+			"project"
+		],
+		"files" : 
+		[
+			"C:/esp/v6.1/esp-idf/tools/cmake/ldgen.cmake",
+			"C:/esp/v6.1/esp-idf/tools/cmake/build.cmake",
+			"C:/esp/v6.1/esp-idf/tools/cmake/project.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1099,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 862,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 236,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "__idf_esp_driver_gptimer::@b8628cd9d7b32710339f"
+		},
+		{
+			"id" : "__idf_esp_driver_spi::@a108b58494cdd93e678c"
+		},
+		{
+			"id" : "__idf_esp_hal_ana_cmpr::@867709808eb6b973f7ff"
+		},
+		{
+			"id" : "__idf_esp_blockdev_util::@d23c2a3f92d58ca67124"
+		},
+		{
+			"id" : "__idf_esp_driver_ana_cmpr::@875e5d2c66b6655ff5e5"
+		},
+		{
+			"id" : "__idf_esp_driver_bitscrambler::@e691b08142125fc04183"
+		},
+		{
+			"id" : "__idf_esp_driver_cam::@d005630ea6316acc7c7d"
+		},
+		{
+			"id" : "__idf_esp_driver_isp::@54daad7fd0c94862d156"
+		},
+		{
+			"id" : "__idf_esp_driver_i2c::@823c83e66a2d740aac64"
+		},
+		{
+			"id" : "__idf_esp_hal_i3c::@eb4f0f17616fd7cab688"
+		},
+		{
+			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
+		},
+		{
+			"id" : "__idf_unity::@fec746937506b5690992"
+		},
+		{
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"id" : "__idf_esp_hal_twai::@51ba563199ada2b3f0ba"
+		},
+		{
+			"id" : "__idf_driver::@76403182dd99a02c203e"
+		},
+		{
+			"id" : "__idf_esp_hal_jpeg::@791e149c16df99d05246"
+		},
+		{
+			"id" : "__idf_esp_driver_i3c::@bd26afe12467d20eb6d4"
+		},
+		{
+			"id" : "__idf_esp_driver_jpeg::@cb810b70c7c0067dc29d"
+		},
+		{
+			"id" : "__idf_esp_hal_ledc::@f7e0a64d676c21278c1e"
+		},
+		{
+			"id" : "__idf_esp_driver_ledc::@9a01f21f38f01238ca77"
+		},
+		{
+			"id" : "__idf_esp_hal_mcpwm::@c68ca8ee46f178963f61"
+		},
+		{
+			"id" : "__idf_esp_hal_parlio::@894fe47290b0cc96307a"
+		},
+		{
+			"id" : "__idf_esp_driver_mcpwm::@48ac72772582b222889a"
+		},
+		{
+			"id" : "__idf_esp_driver_parlio::@26a02346e1abd52d0d01"
+		},
+		{
+			"id" : "__idf_esp_hal_pcnt::@ef149782a99a2bc767b6"
+		},
+		{
+			"id" : "__idf_esp_driver_pcnt::@7f5d6483ec7c43d22871"
+		},
+		{
+			"id" : "__idf_esp_driver_ppa::@1b3b3a5edd4907d52f1e"
+		},
+		{
+			"id" : "__idf_esp_hal_ppa::@9e723972d6253d2da5d0"
+		},
+		{
+			"id" : "__idf_esp_hal_rmt::@de1b8987904643f454ff"
+		},
+		{
+			"id" : "__idf_esp_driver_rmt::@0efb206e593213c2b54a"
+		},
+		{
+			"id" : "__idf_esp_hal_sd::@1ada79c52e603a3e38c7"
+		},
+		{
+			"id" : "__idf_sdmmc::@89ed5bca1750ffbc7db6"
+		},
+		{
+			"id" : "__idf_esp_driver_sd_intf::@9cb2f063b9dd7d282253"
+		},
+		{
+			"id" : "__idf_esp_driver_sdm::@601b6ef28d63f823a7b4"
+		},
+		{
+			"id" : "__idf_esp_driver_sdmmc::@6ccb6c8602dfb90db4d7"
+		},
+		{
+			"id" : "__idf_esp_driver_sdspi::@c293af58c49fe790ac32"
+		},
+		{
+			"id" : "__idf_esp_driver_touch_sens::@834ec88eeea238586f95"
+		},
+		{
+			"id" : "__idf_esp_driver_tsens::@dad043442c4ac9e51f1a"
+		},
+		{
+			"id" : "__idf_esp_driver_twai::@0c7b27fa84c4efa2b2b9"
+		},
+		{
+			"id" : "__idf_riscv::@5eeb1a2ca709d020776e"
+		},
+		{
+			"id" : "__idf_esp_hal_emac::@b386aaa16a40a532e9e9"
+		},
+		{
+			"id" : "__idf_esp_eth::@68140d310044213ed0bc"
+		},
+		{
+			"id" : "__idf_esp_hal_lcd::@f665e8e55ce613517df9"
+		},
+		{
+			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
+		},
+		{
+			"id" : "__idf_esp_https_server::@a47490a9e49b7eabdb18"
+		},
+		{
+			"id" : "__idf_esp_lcd::@d5a84597e1633c9ab0d3"
+		},
+		{
+			"id" : "__idf_protobuf-c::@b14513c4bd859268ec22"
+		},
+		{
+			"id" : "__idf_protocomm::@d76d01c8dec06205e1fc"
+		},
+		{
+			"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef"
+		},
+		{
+			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
+		},
+		{
+			"id" : "__idf_wear_levelling::@cb21b0d7c0815cff11c6"
+		},
+		{
+			"id" : "__idf_rt::@c044be52929cb104e3c1"
+		},
+		{
+			"id" : "__idf_spiffs::@df881b71474064c86689"
+		},
+		{
+			"id" : "__idf_imu::@10eef089b95aaa63e19e"
+		},
+		{
+			"id" : "__idf_orientation::@e81b47400b5ec7b03557"
+		},
+		{
+			"id" : "__idf_attitude::@bf4411f5cdbf6582f0a9"
+		},
+		{
+			"id" : "__idf_espressif__esp_hosted::@cd1478f59ad33d94018c"
+		},
+		{
+			"id" : "__idf_espressif__esp_serial_slave_link::@61d61d3381b422a81aa4"
+		},
+		{
+			"id" : "__idf_espressif__eppp_link::@a7b517ceef1c876980b3"
+		},
+		{
+			"id" : "__idf_drone_web::@647b7a20940964ffce7b"
+		},
+		{
+			"id" : "__idf_main::@7368607ed66887415643"
+		}
+	],
+	"id" : "__ldgen_output_sections.ld::@6890427a1f51a3e7e1df",
+	"name" : "__ldgen_output_sections.ld",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/__ldgen_output_sections.ld",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/__ldgen_output_sections.ld.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/esp_system/ld/sections.ld.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

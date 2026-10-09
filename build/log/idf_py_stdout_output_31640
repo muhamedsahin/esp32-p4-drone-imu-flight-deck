@@ -1,0 +1,53 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/muham/Desktop/Drone/smal/mpu6050/build/partition_table/partition-table.bin C:/Users/muham/Desktop/Drone/smal/mpu6050/build/mpu6050.bin"
+mpu6050.bin binary size 0x71800 bytes. Smallest app partition is 0x100000 bytes. 0x8e800 bytes (56%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build\bootloader && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/muham/Desktop/Drone/smal/mpu6050/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5a80 bytes. 0x580 bytes (6%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32p4 -p COM17 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 2MB 0x2000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 mpu6050.bin --diff-with bootloader/bootloader_flashed.bin partition_table/partition-table_flashed.bin mpu6050_flashed.bin
+esptool v5.4.0
+Serial port COM17:
+Connecting....
+Connected to ESP32-P4 on COM17:
+Chip type:          ESP32-P4 (revision v1.3)
+Features:           Dual Core + LP Core, 400MHz
+Crystal frequency:  40MHz
+MAC:                80:f1:b2:d2:d7:9a
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00002000...
+SHA digest in image updated.
+SHA digest in image updated.
+No changed sectors found, verifying if data is in flash...
+'bootloader/bootloader.bin' at 0x00002000 verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+No changed sectors found, verifying if data is in flash...
+'partition_table/partition-table.bin' at 0x00008000 verified.
+
+Writing 'mpu6050.bin' at 0x00010000...
+Changed data sectors found, fast reflashing...
+Reflashing 1 changed sector at 0x00010000...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 4096 bytes to 1932...
+Writing at 0x00011000 ------------------------------ 100.0% 1.89kB/1.89kB [0s] 
+Wrote 4096 bytes (1932 compressed) at 0x00010000 in 0.0 seconds (690.9 kbit/s).
+Reflashing 110 changed sectors at 0x00014000...
+Flash will be erased from 0x00014000 to 0x00081fff...
+Compressed 450560 bytes to 241344...
+Writing at 0x0001e2bc -- ---------------------------   6.8% 16.00kB/235.69kB [0s] Writing at 0x00026284 ---- -------------------------  13.6% 32.00kB/235.69kB [0s] Writing at 0x0002d1d2 ------ -----------------------  20.4% 48.00kB/235.69kB [1s] Writing at 0x00034019 -------- ---------------------  27.2% 64.00kB/235.69kB [1s] Writing at 0x0003b929 ---------- -------------------  33.9% 80.00kB/235.69kB [2s] Writing at 0x00042603 ------------ -----------------  40.7% 96.00kB/235.69kB [2s] Writing at 0x0004919d -------------- ---------------  47.5% 112.00kB/235.69kB [2s] Writing at 0x00050fd9 ---------------- -------------  54.3% 128.00kB/235.69kB [3s] Writing at 0x000587a6 ------------------ -----------  61.1% 144.00kB/235.69kB [3s] Writing at 0x0006029e -------------------- ---------  67.9% 160.00kB/235.69kB [4s] Writing at 0x00067104 ---------------------- -------  74.7% 176.00kB/235.69kB [4s] Writing at 0x0006e6a8 ------------------------ -----  81.5% 192.00kB/235.69kB [4s] Writing at 0x00074093 -------------------------- ---  88.3% 208.00kB/235.69kB [5s] Writing at 0x0007adaa ---------------------------- -  95.0% 224.00kB/235.69kB [5s] Writing at 0x00082000 ------------------------------ 100.0% 235.69kB/235.69kB [5s] 
+Wrote 450560 bytes (241344 compressed) at 0x00014000 in 6.1 seconds (592.1 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...

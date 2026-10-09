@@ -1,0 +1,10 @@
+^C:\USERS\MUHAM\DESKTOP\DRONE\SMAL\MPU6050\TESTS\CMAKELISTS.TXT
+setlocal
+C:\Users\muham\.espressif\tools\cmake\4.0.3\bin\cmake.exe -SC:/Users/muham/Desktop/Drone/smal/mpu6050/tests -BC:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests --check-stamp-file C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,20 @@
+Command: ninja all
+[1/10] Generating ../../app.js.S
+[2/10] Building ASM object esp-idf/drone_web/CMakeFiles/__idf_drone_web.dir/__/__/app.js.S.obj
+[3/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build-idf\bootloader && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/bootloader/bootloader.bin"
+Bootloader binary size 0x5a80 bytes. 0x580 bytes (6%) free.
+[4/10] No install step for 'bootloader'
+[5/10] Linking C static library esp-idf\drone_web\libdrone_web.a
+[6/10] Completed 'bootloader'
+[7/10] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker script generation, section names unchanged
+[8/10] Linking CXX executable mpu6050.elf
+[9/10] Generating binary image from built executable
+esptool v5.4.0
+Creating ESP32-P4 image...
+Merged 4 ELF sections.
+Successfully created ESP32-P4 image.
+Generated C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/mpu6050.bin
+[10/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build-idf && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/partition_table/partition-table.bin C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/mpu6050.bin"
+mpu6050.bin binary size 0xf0940 bytes. Smallest app partition is 0x100000 bytes. 0xf6c0 bytes (6%) free.

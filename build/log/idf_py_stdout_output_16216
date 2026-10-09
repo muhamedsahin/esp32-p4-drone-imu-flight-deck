@@ -1,0 +1,51 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/muham/Desktop/Drone/smal/mpu6050/build/partition_table/partition-table.bin C:/Users/muham/Desktop/Drone/smal/mpu6050/build/mpu6050.bin"
+mpu6050.bin binary size 0x360a0 bytes. Smallest app partition is 0x100000 bytes. 0xc9f60 bytes (79%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build\bootloader && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/muham/Desktop/Drone/smal/mpu6050/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5a80 bytes. 0x580 bytes (6%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32p4 -p COM17 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 2MB 0x2000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 mpu6050.bin --skip-flashed
+esptool v5.4.0
+Serial port COM17:
+Connecting....
+Connected to ESP32-P4 on COM17:
+Chip type:          ESP32-P4 (revision v1.3)
+Features:           Dual Core + LP Core, 400MHz
+Crystal frequency:  40MHz
+MAC:                80:f1:b2:d2:d7:9a
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00002000...
+SHA digest in image updated.
+Comparing flash contents against new data...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Compressed 23168 bytes to 14298...
+Writing at 0x00007a80 ------------------------------ 100.0% 13.96kB/13.96kB [0s] 
+Wrote 23168 bytes (14298 compressed) at 0x00002000 in 0.6 seconds (292.1 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+Comparing flash contents against new data...
+'partition_table/partition-table.bin' at 0x00008000 already in flash, skipping write.
+
+Writing 'mpu6050.bin' at 0x00010000...
+Comparing flash contents against new data...
+Flash will be erased from 0x00010000 to 0x00046fff...
+Compressed 221344 bytes to 112265...
+Writing at 0x0001b28e ---- -------------------------  14.6% 16.00kB/109.63kB [0s] Writing at 0x00021a20 -------- ---------------------  29.2% 32.00kB/109.63kB [0s] Writing at 0x00028c9e ------------- ----------------  43.8% 48.00kB/109.63kB [1s] Writing at 0x00030b74 ----------------- ------------  58.4% 64.00kB/109.63kB [1s] Writing at 0x00037224 --------------------- --------  73.0% 80.00kB/109.63kB [2s] Writing at 0x0003e349 -------------------------- ---  87.6% 96.00kB/109.63kB [2s] Writing at 0x000460a0 ------------------------------ 100.0% 109.63kB/109.63kB [2s] 
+Wrote 221344 bytes (112265 compressed) at 0x00010000 in 3.1 seconds (566.5 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...

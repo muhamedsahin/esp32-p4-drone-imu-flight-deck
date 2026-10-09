@@ -1,0 +1,10 @@
+C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\text_workflow_tests.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\text_workflow_tests.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\fakes\fake_esp.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\fake_esp.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\mpu6050.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\mpu6050_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_storage.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\mpu6050_storage.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_text_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\mpu6050_text_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\imu_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration_record.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\imu_calibration_record.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration_text.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\imu_calibration_text.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_text_store.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_text_tests.dir\Debug\imu_text_store.obj

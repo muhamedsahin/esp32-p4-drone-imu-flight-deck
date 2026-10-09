@@ -1,0 +1,15 @@
+Command: cmake -G Ninja -B C:\Users\muham\Desktop\Drone\smal\mpu6050\build-idf -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True C:\Users\muham\Desktop\Drone\smal\mpu6050
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32p4
+NOTE: Dependencies lock doesn't exist, solving dependencies.
+............NOTE: Updating lock file at C:\Users\muham\Desktop\Drone\smal\mpu6050\dependencies.lock
+NOTE: Processing 6 dependencies:
+NOTE: [1/6] espressif/eppp_link (1.1.6)
+NOTE: [2/6] espressif/esp_hosted (2.12.7)
+NOTE: [3/6] espressif/esp_serial_slave_link (1.1.2)
+NOTE: [4/6] espressif/esp_wifi_remote (1.6.5)
+NOTE: [5/6] espressif/wifi_remote_over_eppp (0.3.3)
+NOTE: [6/6] idf (6.1.0)
+-- Using new driver components (IDF >= 5.0)
+-- Configuring incomplete, errors occurred!

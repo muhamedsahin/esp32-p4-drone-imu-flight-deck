@@ -1,0 +1,225 @@
+Command: C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM17 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 0 --decode-panic backtrace C:\Users\muham\Desktop\Drone\smal\mpu6050\build\mpu6050.elf C:\Users\muham\Desktop\Drone\smal\mpu6050\build\bootloader\bootloader.elf --force-color -m 'C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM17'
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x10f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x1524
+load:0x4ff28ed0,len:0xf58
+load:0x4ff2bbd0,len:0x35a4
+entry 0x4ff28eda
+[0;32mI (27) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Oct  8 2026 12:31:40[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.3[0m
+[0;32mI (30) boot: efuse block revision: v0.3[0m
+[0;32mI (34) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32p4: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0b4fch ( 46332) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001b524 vaddr=30100000 size=000b4h (   180) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0001b5e0 vaddr=4ff00000 size=04a38h ( 19000) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=40000020 size=1abc8h (109512) map[0m
+[0;32mI (136) esp_image: segment 4: paddr=0003abf0 vaddr=4ff04a38 size=08c78h ( 35960) load[0m
+[0;32mI (146) esp_image: segment 5: paddr=00043870 vaddr=4ff0d700 size=02b24h ( 11044) load[0m
+[0;32mI (154) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (154) boot: Disabling RNG early entropy source...[0m
+[0;32mI (165) cpu_start: Multicore app[0m
+[0;32mI (175) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (176) cpu_start: Pro cpu start user code[0m
+[0;32mI (176) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     mpu6050[0m
+[0;32mI (185) app_init: App version:      9172965-dirty[0m
+[0;32mI (190) app_init: Compile time:     Oct  8 2026 12:30:39[0m
+[0;32mI (195) app_init: ELF file SHA256:  22cd4971b...[0m
+[0;32mI (199) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 4FF11B60 len 00029460 (165 KiB): RETENT_RAM[0m
+[0;32mI (226) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (232) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (237) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (242) heap_init: At 301000B4 len 00001F4C (7 KiB): SPM[0m
+[0;32mI (249) spi_flash: detected chip: gd[0m
+[0;32mI (251) spi_flash: flash io: dio[0m
+[0;33mW (254) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (266) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (272) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (281) sleep_clock: System sleep clock ICG setting initialization[0m
+[0;32mI (285) main_task: Started on CPU0[0m
+[0;32mI (295) main_task: Calling app_main()[0m
+[0;32mI (295) MPU6050: Gyroscope kalibrasyonu basliyor. Sensoru hareket ettirmeyin.[0m
+[0;32mI (2125) MPU6050: Gyro bias: X=132.035 Y=372.647 Z=-110.765[0m
+ACC X= 5244.00 Y= -844.00 Z=-14964.00 | GYRO X=   13.97 Y=   28.35 Z=   -5.24
+ACC X= 5272.00 Y= -884.00 Z=-14848.00 | GYRO X=   -3.03 Y=   38.35 Z=   25.76
+ACC X= 5172.00 Y= -888.00 Z=-14788.00 | GYRO X=    9.97 Y=    5.35 Z=    6.76
+ACC X= 5244.00 Y= -856.00 Z=-14904.00 | GYRO X=    0.97 Y=    3.35 Z=   13.76
+ACC X= 5200.00 Y= -840.00 Z=-14812.00 | GYRO X=   16.97 Y=   17.35 Z=    5.76
+ACC X= 5220.00 Y= -924.00 Z=-14912.00 | GYRO X=   -2.03 Y=  -13.65 Z=  -12.24
+ACC X= 5196.00 Y= -788.00 Z=-14880.00 | GYRO X=  -30.03 Y=  -11.65 Z=    8.76
+ACC X= 5248.00 Y= -848.00 Z=-14904.00 | GYRO X=   37.97 Y=  -13.65 Z=    2.76
+ACC X= 5228.00 Y= -924.00 Z=-14904.00 | GYRO X=   23.97 Y=  -16.65 Z=   -1.24
+ACC X= 5212.00 Y= -864.00 Z=-14864.00 | GYRO X=   -9.03 Y=  -24.65 Z=   13.76
+ACC X= 5180.00 Y= -860.00 Z=-14940.00 | GYRO X=   33.97 Y=   16.35 Z=   35.76
+ACC X= 5328.00 Y= -964.00 Z=-14984.00 | GYRO X=   -3.03 Y=   16.35 Z=   26.76
+ACC X= 5264.00 Y= -828.00 Z=-14824.00 | GYRO X=  -34.03 Y=  -31.65 Z=  -29.24
+ACC X= 5276.00 Y= -888.00 Z=-14884.00 | GYRO X=  -12.03 Y=  -14.65 Z=    5.76
+ACC X= 5256.00 Y= -860.00 Z=-14936.00 | GYRO X=   -6.03 Y=   -8.65 Z=   15.76
+ACC X= 5272.00 Y= -864.00 Z=-14976.00 | GYRO X=   37.97 Y=  -18.65 Z=  -37.24
+ACC X= 5172.00 Y= -804.00 Z=-14880.00 | GYRO X=  -12.03 Y=   -0.65 Z=   12.76
+ACC X= 5260.00 Y= -852.00 Z=-14836.00 | GYRO X=    2.97 Y=  -20.65 Z=    7.76
+ACC X= 5284.00 Y= -864.00 Z=-14912.00 | GYRO X=   -1.03 Y=  -28.65 Z=  -12.24
+ACC X= 5172.00 Y= -868.00 Z=-14920.00 | GYRO X=  -30.03 Y=  -39.65 Z=    8.76
+ACC X= 5220.00 Y= -788.00 Z=-14980.00 | GYRO X=   -6.03 Y=   19.35 Z=  -25.24
+ACC X= 5252.00 Y= -864.00 Z=-14900.00 | GYRO X=   16.97 Y=  -12.65 Z=   -2.24
+ACC X= 5272.00 Y= -844.00 Z=-14988.00 | GYRO X=   -0.03 Y=  -15.65 Z=   -7.24
+ACC X= 5276.00 Y= -872.00 Z=-14920.00 | GYRO X=  -33.03 Y=  -33.65 Z=  -23.24
+ACC X= 5176.00 Y= -844.00 Z=-14880.00 | GYRO X=    0.97 Y=  -17.65 Z=   15.76
+ACC X= 5256.00 Y= -844.00 Z=-14788.00 | GYRO X=   32.97 Y=  -21.65 Z=   -7.24
+ACC X= 5264.00 Y= -832.00 Z=-14884.00 | GYRO X=   24.97 Y=   14.35 Z=   14.76
+ACC X= 5208.00 Y= -864.00 Z=-15020.00 | GYRO X=    3.97 Y=   28.35 Z=  -17.24
+ACC X= 5264.00 Y= -856.00 Z=-14988.00 | GYRO X=   -0.03 Y=    3.35 Z=   10.76
+ACC X= 5236.00 Y= -868.00 Z=-14832.00 | GYRO X=   -2.03 Y=  -26.65 Z=   23.76
+ACC X= 5184.00 Y= -844.00 Z=-14876.00 | GYRO X=  -33.03 Y=   -8.65 Z=   10.76
+ACC X= 5228.00 Y= -848.00 Z=-14772.00 | GYRO X=  -17.03 Y=    5.35 Z=   -4.24
+ACC X= 5180.00 Y= -912.00 Z=-14872.00 | GYRO X=   -7.03 Y=  -30.65 Z=   17.76
+ACC X= 5272.00 Y= -904.00 Z=-14956.00 | GYRO X=    9.97 Y=    1.35 Z=  -44.24
+ACC X= 5240.00 Y= -820.00 Z=-14964.00 | GYRO X=   11.97 Y=  -11.65 Z=   12.76
+ACC X= 5240.00 Y= -860.00 Z=-14876.00 | GYRO X=   -3.03 Y=    2.35 Z=   28.76
+ACC X= 5212.00 Y= -884.00 Z=-14880.00 | GYRO X=  -28.03 Y=    5.35 Z=   -9.24
+ACC X= 5180.00 Y= -876.00 Z=-14848.00 | GYRO X=   -5.03 Y=  -18.65 Z=    9.76
+ACC X= 5216.00 Y= -848.00 Z=-14860.00 | GYRO X=  -15.03 Y=  -19.65 Z=    8.76
+ACC X= 5188.00 Y= -840.00 Z=-15032.00 | GYRO X=   34.97 Y=   30.35 Z=  -14.24
+ACC X= 5160.00 Y= -884.00 Z=-15020.00 | GYRO X=    4.97 Y=    3.35 Z=   49.76
+ACC X= 5252.00 Y= -848.00 Z=-14916.00 | GYRO X=   44.97 Y=   19.35 Z=    7.76
+ACC X= 5236.00 Y= -828.00 Z=-15000.00 | GYRO X=    2.97 Y=   38.35 Z=   19.76
+ACC X= 5220.00 Y= -904.00 Z=-14860.00 | GYRO X=   13.97 Y=   -3.65 Z=  -16.24
+ACC X= 5228.00 Y= -840.00 Z=-14868.00 | GYRO X=   -3.03 Y=   -9.65 Z=   16.76
+ACC X= 5224.00 Y= -812.00 Z=-14920.00 | GYRO X=  -26.03 Y=  -31.65 Z=  -14.24
+ACC X= 5172.00 Y= -904.00 Z=-14888.00 | GYRO X=  -26.03 Y=    7.35 Z=  -25.24
+ACC X= 5272.00 Y= -876.00 Z=-15040.00 | GYRO X=   30.97 Y=  -11.65 Z=  -12.24
+ACC X= 5144.00 Y= -824.00 Z=-14876.00 | GYRO X=   43.97 Y=   13.35 Z=    2.76
+ACC X= 5172.00 Y= -832.00 Z=-14940.00 | GYRO X=  -19.03 Y=   18.35 Z=   -1.24
+ACC X= 5176.00 Y= -852.00 Z=-14832.00 | GYRO X=  -12.03 Y=    6.35 Z=   -4.24
+ACC X= 5228.00 Y= -832.00 Z=-14968.00 | GYRO X=    9.97 Y=   -9.65 Z=   14.76
+ACC X= 5228.00 Y= -824.00 Z=-14936.00 | GYRO X=  -24.03 Y=   -0.65 Z=   -6.24
+ACC X= 5272.00 Y= -848.00 Z=-14872.00 | GYRO X=  -15.03 Y=   39.35 Z=    4.76
+ACC X= 5224.00 Y= -820.00 Z=-14936.00 | GYRO X=    7.97 Y=    5.35 Z=  -10.24
+ACC X= 5252.00 Y= -840.00 Z=-14968.00 | GYRO X=   -4.03 Y=   27.35 Z=   12.76
+ACC X= 5212.00 Y= -864.00 Z=-14844.00 | GYRO X=  -33.03 Y=  -28.65 Z=  -31.24
+ACC X= 5216.00 Y= -852.00 Z=-14968.00 | GYRO X=  -31.03 Y=   37.35 Z=    6.76
+ACC X= 5208.00 Y= -840.00 Z=-15008.00 | GYRO X=   -4.03 Y=  -35.65 Z=   19.76
+ACC X= 5224.00 Y= -880.00 Z=-14892.00 | GYRO X=  -39.03 Y=  -22.65 Z=  -12.24
+ACC X= 5248.00 Y= -780.00 Z=-14944.00 | GYRO X=  -16.03 Y=   -9.65 Z=   -6.24
+ACC X= 5240.00 Y= -748.00 Z=-15012.00 | GYRO X=   -6.03 Y=  -13.65 Z=   -5.24
+ACC X= 5284.00 Y= -868.00 Z=-14828.00 | GYRO X=    9.97 Y=    3.35 Z=  -15.24
+ACC X= 5180.00 Y= -804.00 Z=-14824.00 | GYRO X=  -22.03 Y=  -25.65 Z=  -16.24
+ACC X= 5264.00 Y= -812.00 Z=-14844.00 | GYRO X=  -14.03 Y=    4.35 Z=  -17.24
+ACC X= 5236.00 Y= -904.00 Z=-14936.00 | GYRO X=  -20.03 Y=  -15.65 Z=   19.76
+ACC X= 5252.00 Y= -840.00 Z=-14892.00 | GYRO X=    3.97 Y=   16.35 Z=  -11.24
+ACC X= 5260.00 Y= -848.00 Z=-14968.00 | GYRO X=    2.97 Y=   39.35 Z=   20.76
+ACC X= 5220.00 Y= -852.00 Z=-14948.00 | GYRO X=   -2.03 Y=   14.35 Z=   -8.24
+ACC X= 5196.00 Y= -864.00 Z=-14920.00 | GYRO X=  -32.03 Y=  -28.65 Z=   47.76
+ACC X= 5208.00 Y= -816.00 Z=-14936.00 | GYRO X=    0.97 Y=   13.35 Z=  -15.24
+ACC X= 5228.00 Y= -848.00 Z=-14936.00 | GYRO X=   -0.03 Y=   -5.65 Z=   -1.24
+ACC X= 5188.00 Y= -884.00 Z=-14852.00 | GYRO X=   -7.03 Y=   -4.65 Z=  -17.24
+ACC X= 5248.00 Y= -820.00 Z=-14956.00 | GYRO X=  -16.03 Y=   24.35 Z=   -8.24
+ACC X= 5244.00 Y= -824.00 Z=-14848.00 | GYRO X=   10.97 Y=   49.35 Z=    8.76
+ACC X= 5232.00 Y= -896.00 Z=-14856.00 | GYRO X=   10.97 Y=  -13.65 Z=  -12.24
+ACC X= 5216.00 Y= -936.00 Z=-14880.00 | GYRO X=   13.97 Y=  -16.65 Z=   20.76
+ACC X= 5200.00 Y= -876.00 Z=-14912.00 | GYRO X=   -3.03 Y=    1.35 Z=   20.76
+ACC X= 5196.00 Y= -928.00 Z=-14876.00 | GYRO X=   -8.03 Y=   33.35 Z=    2.76
+ACC X= 5188.00 Y= -876.00 Z=-14928.00 | GYRO X=   -5.03 Y=    1.35 Z=   14.76
+ACC X= 5220.00 Y= -860.00 Z=-14832.00 | GYRO X=  -24.03 Y=   29.35 Z=   -7.24
+ACC X= 5216.00 Y= -784.00 Z=-14936.00 | GYRO X=   11.97 Y=   24.35 Z=   18.76
+ACC X= 5216.00 Y= -840.00 Z=-14956.00 | GYRO X=   -4.03 Y=   10.35 Z=    6.76
+ACC X= 5132.00 Y= -848.00 Z=-14828.00 | GYRO X=  -12.03 Y=  -10.65 Z=   -2.24
+ACC X= 5220.00 Y= -864.00 Z=-14820.00 | GYRO X=  -65.03 Y=   29.35 Z=  -10.24
+ACC X= 5272.00 Y= -852.00 Z=-14872.00 | GYRO X=   -0.03 Y=   44.35 Z=  -12.24
+ACC X= 5240.00 Y= -792.00 Z=-14928.00 | GYRO X=    0.97 Y=  -10.65 Z=  -14.24
+ACC X= 5172.00 Y= -828.00 Z=-14944.00 | GYRO X=   -3.03 Y=    1.35 Z=    0.76
+ACC X= 5216.00 Y= -780.00 Z=-14908.00 | GYRO X=   32.97 Y=  -30.65 Z=    1.76
+ACC X= 5264.00 Y= -812.00 Z=-15028.00 | GYRO X=   -6.03 Y=  -33.65 Z=  -15.24
+ACC X= 5212.00 Y= -840.00 Z=-14800.00 | GYRO X=   -7.03 Y=  -73.65 Z=  -16.24
+ACC X= 5280.00 Y= -836.00 Z=-14956.00 | GYRO X=    9.97 Y=   -9.65 Z=   -5.24
+ACC X= 5180.00 Y= -828.00 Z=-14816.00 | GYRO X=    6.97 Y=    8.35 Z=   -0.24
+ACC X= 5204.00 Y= -860.00 Z=-14892.00 | GYRO X=  -17.03 Y=  -38.65 Z=    0.76
+ACC X= 5264.00 Y= -848.00 Z=-14964.00 | GYRO X=   25.97 Y=   26.35 Z=    0.76
+ACC X= 5144.00 Y= -888.00 Z=-14900.00 | GYRO X=   -9.03 Y=   -8.65 Z=    6.76
+ACC X= 5304.00 Y= -884.00 Z=-14956.00 | GYRO X=    6.97 Y=  -19.65 Z=  -24.24
+ACC X= 5220.00 Y= -836.00 Z=-14900.00 | GYRO X=   -0.03 Y=  -17.65 Z=    4.76
+ACC X= 5200.00 Y= -836.00 Z=-14928.00 | GYRO X=  -26.03 Y=  -16.65 Z=  -11.24
+ACC X= 5220.00 Y= -844.00 Z=-14888.00 | GYRO X=  -10.03 Y=   -1.65 Z=    2.76
+ACC X= 5192.00 Y= -872.00 Z=-14896.00 | GYRO X=    3.97 Y=   -6.65 Z=   22.76
+ACC X= 5220.00 Y= -788.00 Z=-14956.00 | GYRO X=    1.97 Y=   29.35 Z=   -8.24
+ACC X= 5192.00 Y= -840.00 Z=-15016.00 | GYRO X=  -13.03 Y=   -1.65 Z=    5.76
+ACC X= 5268.00 Y= -832.00 Z=-14796.00 | GYRO X=  -12.03 Y=  -24.65 Z=  -28.24
+ACC X= 5292.00 Y= -856.00 Z=-14876.00 | GYRO X=  -39.03 Y=    7.35 Z=    5.76
+ACC X= 5260.00 Y= -856.00 Z=-15028.00 | GYRO X=  -11.03 Y=   24.35 Z=    6.76
+ACC X= 5212.00 Y= -868.00 Z=-14868.00 | GYRO X=   24.97 Y=   18.35 Z=   19.76
+ACC X= 5236.00 Y= -912.00 Z=-14932.00 | GYRO X=  -17.03 Y=   -5.65 Z=  -16.24
+ACC X= 5188.00 Y= -864.00 Z=-14864.00 | GYRO X=    9.97 Y=   27.35 Z=   20.76
+ACC X= 5232.00 Y= -852.00 Z=-14844.00 | GYRO X=   25.97 Y=  -15.65 Z=  -18.24
+ACC X= 5152.00 Y= -840.00 Z=-14900.00 | GYRO X=   -1.03 Y=  -31.65 Z=  -29.24
+ACC X= 5284.00 Y= -900.00 Z=-14892.00 | GYRO X=  -13.03 Y=  -43.65 Z=    4.76
+ACC X= 5232.00 Y= -796.00 Z=-14876.00 | GYRO X=  -53.03 Y=   -9.65 Z=   12.76
+ACC X= 5136.00 Y= -836.00 Z=-14876.00 | GYRO X=  -13.03 Y=  -11.65 Z=   -5.24
+ACC X= 5220.00 Y= -872.00 Z=-14888.00 | GYRO X=   19.97 Y=    7.35 Z=   -5.24
+ACC X= 5228.00 Y= -864.00 Z=-14944.00 | GYRO X=    0.97 Y=   17.35 Z=   12.76
+ACC X= 5196.00 Y= -864.00 Z=-14844.00 | GYRO X=  -12.03 Y=  -11.65 Z=  -34.24
+ACC X= 5204.00 Y= -864.00 Z=-14964.00 | GYRO X=   -6.03 Y=   -7.65 Z=   -7.24
+ACC X= 5232.00 Y= -816.00 Z=-14928.00 | GYRO X=   -0.03 Y=   -0.65 Z=   -1.24
+ACC X= 5204.00 Y= -808.00 Z=-14912.00 | GYRO X=  -31.03 Y=    8.35 Z=    7.76
+ACC X= 5184.00 Y= -832.00 Z=-14864.00 | GYRO X=    1.97 Y=  -16.65 Z=  -16.24
+ACC X= 5220.00 Y= -856.00 Z=-14908.00 | GYRO X=    7.97 Y=   -6.65 Z=    4.76
+ACC X= 5256.00 Y= -820.00 Z=-14840.00 | GYRO X=   -0.03 Y=   14.35 Z=    7.76
+ACC X= 5180.00 Y= -848.00 Z=-15092.00 | GYRO X=    8.97 Y=  -42.65 Z=   -7.24
+ACC X= 5248.00 Y= -816.00 Z=-14872.00 | GYRO X=   -6.03 Y=   15.35 Z=  -25.24
+ACC X= 5268.00 Y= -908.00 Z=-14880.00 | GYRO X=    5.97 Y=  -32.65 Z=  -27.24
+ACC X= 5244.00 Y= -884.00 Z=-14852.00 | GYRO X=   17.97 Y=   25.35 Z=   26.76
+ACC X= 5260.00 Y= -844.00 Z=-14944.00 | GYRO X=   26.97 Y=   22.35 Z=  -33.24
+ACC X= 5188.00 Y= -828.00 Z=-14912.00 | GYRO X=    1.97 Y=   -7.65 Z=   -4.24
+ACC X= 5280.00 Y= -880.00 Z=-14876.00 | GYRO X=   -9.03 Y=  -12.65 Z=   -4.24
+ACC X= 5204.00 Y= -812.00 Z=-14836.00 | GYRO X=  -22.03 Y=  -14.65 Z=  -24.24
+ACC X= 5252.00 Y= -876.00 Z=-14944.00 | GYRO X=  -54.03 Y=  -10.65 Z=  -20.24
+ACC X= 5200.00 Y= -848.00 Z=-14992.00 | GYRO X=   11.97 Y=   -8.65 Z=   -3.24
+ACC X= 5248.00 Y= -904.00 Z=-14844.00 | GYRO X=  -13.03 Y=   14.35 Z=  -14.24
+ACC X= 5276.00 Y= -876.00 Z=-14784.00 | GYRO X=  -33.03 Y=   11.35 Z=   25.76
+ACC X= 5204.00 Y= -892.00 Z=-14896.00 | GYRO X=    9.97 Y=   -8.65 Z=   16.76
+ACC X= 5240.00 Y= -792.00 Z=-14892.00 | GYRO X=  -26.03 Y=  -14.65 Z=  -13.24
+ACC X= 5212.00 Y= -840.00 Z=-14912.00 | GYRO X=  -27.03 Y=   -6.65 Z=   -2.24
+ACC X= 5224.00 Y= -908.00 Z=-15048.00 | GYRO X=  -10.03 Y=   19.35 Z=   -6.24
+ACC X= 5224.00 Y= -804.00 Z=-14900.00 | GYRO X=    5.97 Y=    4.35 Z=    4.76
+ACC X= 5272.00 Y= -868.00 Z=-14920.00 | GYRO X=  -16.03 Y=  -16.65 Z=  -13.24
+ACC X= 5236.00 Y= -880.00 Z=-14960.00 | GYRO X=   18.97 Y=    5.35 Z=   28.76
+ACC X= 5212.00 Y= -876.00 Z=-14764.00 | GYRO X=   -5.03 Y=   -0.65 Z=   31.76
+ACC X= 5176.00 Y= -816.00 Z=-14864.00 | GYRO X=  -44.03 Y=   -3.65 Z=  -12.24
+ACC X= 5216.00 Y= -844.00 Z=-14812.00 | GYRO X=   -9.03 Y=   -9.65 Z=  -14.24
+ACC X= 5220.00 Y= -808.00 Z=-14868.00 | GYRO X=   15.97 Y=   28.35 Z=  -16.24
+ACC X= 5220.00 Y= -872.00 Z=-14896.00 | GYRO X=    8.97 Y=   21.35 Z=    1.76
+ACC X= 5220.00 Y= -868.00 Z=-14908.00 | GYRO X=   -3.03 Y=   34.35 Z=  -17.24
+ACC X= 5216.00 Y= -820.00 Z=-14884.00 | GYRO X=  -39.03 Y=  -22.65 Z=  -13.24
+ACC X= 5256.00 Y= -832.00 Z=-14924.00 | GYRO X=  -31.03 Y=  -21.65 Z=    6.76
+ACC X= 5264.00 Y= -896.00 Z=-14912.00 | GYRO X=  -18.03 Y=  -36.65 Z=  -17.24
+ACC X= 5268.00 Y= -788.00 Z=-14852.00 | GYRO X=   10.97 Y=   24.35 Z=   10.76
+ACC X= 5208.00 Y= -828.00 Z=-14852.00 | GYRO X=    4.97 Y=   -4.65 Z=   -3.24
+ACC X= 5168.00 Y= -772.00 Z=-14940.00 | GYRO X=    6.97 Y=   -4.65 Z=   29.76
+ACC X= 5192.00 Y= -880.00 Z=-14976.00 | GYRO X=   25.97 Y=   30.35 Z=    4.76
+ACC X= 5196.00 Y= -840.00 Z=-14872.00 | GYRO X=   -4.03 Y=   -0.65 Z=   -5.24
+ACC X= 5224.00 Y= -880.00 Z=-14952.00 | GYRO X=  -14.03 Y=    2.35 Z=  -23.24
+ACC X= 5228.00 Y= -900.00 Z=-14920.00 | GYRO X=   -5.03 Y=   -2.65 Z=   -9.24
+ACC X= 5240.00 Y= -892.00 Z=-14892.00 | GYRO X=    2.97 Y=    0.35 Z=   20.76
+ACC X= 5220.00 Y= -836.00 Z=-14840.00 | GYRO X=   40.97 Y=   30.35 Z=    1.76
+ACC X= 5220.00 Y= -800.00 Z=-14908.00 | GYRO X=   -2.03 Y=  -22.65 Z=   -6.24
+ACC X= 5204.00 Y= -788.00 Z=-14916.00 | GYRO X=  -21.03 Y=  -24.65 Z=   11.76
+ACC X= 5160.00 Y= -820.00 Z=-14880.00 | GYRO X=   16.97 Y=   -5.65 Z=  -11.24
+ACC X= 5204.00 Y= -848.00 Z=-14816.00 | GYRO X=    5.97 Y=  -23.65 Z=  -21.24

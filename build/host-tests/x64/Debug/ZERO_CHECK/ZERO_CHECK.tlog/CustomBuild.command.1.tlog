@@ -1,0 +1,10 @@
+^C:\USERS\MUHAM\DESKTOP\DRONE\SMAL\MPU6050\BUILD\HOST-TESTS\CMAKEFILES\87DFD5B8D545927DC49EF432717EFDC5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/muham/Desktop/Drone/smal/mpu6050/tests -BC:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/imu_calibration_tests.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,12 @@
+# Bu dosya derleme sırasında karta gömülür. Değişince yeniden build + flash yap.
+# Çift tırnak kullan; tırnak içindeki # karakteri şifrenin parçasıdır.
+# ssid veya password null ise kart kendi güvenli Wi-Fi ağını açar.
+ssid = null
+password = null
+
+# Kartın oluşturacağı ağ. AP şifresi 8-63 ASCII karakter olmalı.
+ap_ssid = "Drone-IMU"
+ap_password = "drone6050"
+
+# Modeme bağlanamazsa veya bağlantı uzun süre kesilirse kendi ağına geçer.
+connect_timeout_s = 30

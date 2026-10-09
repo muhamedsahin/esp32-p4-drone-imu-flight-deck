@@ -1,0 +1,844 @@
+Command: C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM17 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 0 --decode-panic backtrace C:\Users\muham\Desktop\Drone\smal\mpu6050\build\mpu6050.elf C:\Users\muham\Desktop\Drone\smal\mpu6050\build\bootloader\bootloader.elf --force-color -m 'C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM17'
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x10f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x1524
+load:0x4ff28ed0,len:0xf58
+load:0x4ff2bbd0,len:0x35a4
+entry 0x4ff28eda
+[0;32mI (27) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Oct  8 2026 12:31:40[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.3[0m
+[0;32mI (30) boot: efuse block revision: v0.3[0m
+[0;32mI (34) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32p4: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=40020020 size=0b44ch ( 46156) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001b474 vaddr=30100000 size=000b4h (   180) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0001b530 vaddr=4ff00000 size=04ae8h ( 19176) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=40000020 size=1a958h (108888) map[0m
+[0;32mI (136) esp_image: segment 4: paddr=0003a980 vaddr=4ff04ae8 size=08bc8h ( 35784) load[0m
+[0;32mI (146) esp_image: segment 5: paddr=00043550 vaddr=4ff0d700 size=02b24h ( 11044) load[0m
+[0;32mI (153) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (153) boot: Disabling RNG early entropy source...[0m
+[0;32mI (165) cpu_start: Multicore app[0m
+[0;32mI (175) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (175) cpu_start: Pro cpu start user code[0m
+[0;32mI (176) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (177) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     mpu6050[0m
+[0;32mI (185) app_init: App version:      9172965-dirty[0m
+[0;32mI (189) app_init: Compile time:     Oct  8 2026 12:30:39[0m
+[0;32mI (194) app_init: ELF file SHA256:  be66f00da...[0m
+[0;32mI (199) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (202) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (210) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (214) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 4FF11B60 len 00029460 (165 KiB): RETENT_RAM[0m
+[0;32mI (226) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (231) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (237) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (242) heap_init: At 301000B4 len 00001F4C (7 KiB): SPM[0m
+[0;32mI (249) spi_flash: detected chip: gd[0m
+[0;32mI (250) spi_flash: flash io: dio[0m
+[0;33mW (253) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (266) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (272) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (280) sleep_clock: System sleep clock ICG setting initialization[0m
+[0;32mI (285) main_task: Started on CPU0[0m
+[0;32mI (295) main_task: Calling app_main()[0m
+ACC X=-15260 Y=  3896 Z=  2072 | GYRO X=   165 Y=   393 Z=   -61
+ACC X=-15380 Y=  3924 Z=  2112 | GYRO X=   151 Y=   353 Z=   -87
+ACC X=-15268 Y=  3872 Z=  1992 | GYRO X=   155 Y=   375 Z=   -78
+ACC X=-15356 Y=  3924 Z=  2096 | GYRO X=    80 Y=   402 Z=   -95
+ACC X=-15312 Y=  3872 Z=  2040 | GYRO X=   112 Y=   397 Z=   -95
+ACC X=-15304 Y=  3848 Z=  2052 | GYRO X=   164 Y=   380 Z=  -103
+ACC X=-15260 Y=  3944 Z=  1972 | GYRO X=   127 Y=   388 Z=  -103
+ACC X=-15352 Y=  3932 Z=  2016 | GYRO X=   150 Y=   384 Z=  -100
+ACC X=-15320 Y=  4016 Z=  2072 | GYRO X=   136 Y=   405 Z=   -67
+ACC X=-15328 Y=  3880 Z=  2068 | GYRO X=   113 Y=   386 Z=  -100
+ACC X=-15296 Y=  3940 Z=  2076 | GYRO X=   115 Y=   414 Z=  -103
+ACC X=-15284 Y=  3884 Z=  2032 | GYRO X=   130 Y=   367 Z=   -97
+ACC X=-15280 Y=  3944 Z=  2008 | GYRO X=   162 Y=   385 Z=  -100
+ACC X=-15332 Y=  3916 Z=  2092 | GYRO X=   138 Y=   441 Z=   -88
+ACC X=-15320 Y=  3904 Z=  2072 | GYRO X=   110 Y=   385 Z=   -86
+ACC X=-15360 Y=  3944 Z=  1996 | GYRO X=   127 Y=   418 Z=   -80
+ACC X=-15260 Y=  3940 Z=  1940 | GYRO X=   124 Y=   378 Z=  -107
+ACC X=-15284 Y=  3908 Z=  2040 | GYRO X=   100 Y=   371 Z=  -100
+ACC X=-15324 Y=  3864 Z=  2044 | GYRO X=   143 Y=   414 Z=   -77
+ACC X=-15316 Y=  3940 Z=  2144 | GYRO X=   150 Y=   408 Z=  -137
+ACC X=-15292 Y=  3956 Z=  2144 | GYRO X=   110 Y=   393 Z=   -62
+ACC X=-15344 Y=  3912 Z=  1940 | GYRO X=   140 Y=   405 Z=   -70
+ACC X=-15316 Y=  4012 Z=  1988 | GYRO X=   160 Y=   416 Z=   -84
+ACC X=-15368 Y=  3948 Z=  2052 | GYRO X=   122 Y=   361 Z=   -71
+ACC X=-15320 Y=  3908 Z=  2080 | GYRO X=    72 Y=   394 Z=  -106
+ACC X=-15336 Y=  3976 Z=  2172 | GYRO X=   120 Y=   399 Z=   -78
+ACC X=-15264 Y=  3972 Z=  2024 | GYRO X=   128 Y=   403 Z=   -71
+ACC X=-15328 Y=  3900 Z=  2024 | GYRO X=   128 Y=   368 Z=  -104
+ACC X=-15288 Y=  3936 Z=  1940 | GYRO X=   145 Y=   377 Z=   -80
+ACC X=-15268 Y=  3824 Z=  1960 | GYRO X=    99 Y=   400 Z=   -89
+ACC X=-15348 Y=  3932 Z=  1988 | GYRO X=    76 Y=   415 Z=   -84
+ACC X=-15312 Y=  3932 Z=  2024 | GYRO X=   138 Y=   396 Z=  -103
+ACC X=-15316 Y=  4048 Z=  2120 | GYRO X=   165 Y=   392 Z=   -98
+ACC X=-15336 Y=  3824 Z=  2068 | GYRO X=   126 Y=   380 Z=  -113
+ACC X=-15312 Y=  3916 Z=  1884 | GYRO X=   139 Y=   399 Z=   -99
+ACC X=-15356 Y=  3944 Z=  2128 | GYRO X=   101 Y=   425 Z=  -101
+ACC X=-15320 Y=  3964 Z=  2048 | GYRO X=   125 Y=   329 Z=   -91
+ACC X=-15328 Y=  3864 Z=  2016 | GYRO X=   167 Y=   393 Z=   -85
+ACC X=-15324 Y=  3940 Z=  2024 | GYRO X=   134 Y=   405 Z=   -99
+ACC X=-15372 Y=  3892 Z=  1952 | GYRO X=   163 Y=   361 Z=   -70
+ACC X=-15376 Y=  3960 Z=  1952 | GYRO X=   140 Y=   395 Z=   -87
+ACC X=-15352 Y=  3976 Z=  2016 | GYRO X=    68 Y=   399 Z=  -111
+ACC X=-15368 Y=  3896 Z=  1996 | GYRO X=    89 Y=   397 Z=   -72
+ACC X=-15380 Y=  3904 Z=  2060 | GYRO X=   130 Y=   414 Z=   -92
+ACC X=-15164 Y=  3324 Z=  1284 | GYRO X=   -61 Y=  1308 Z=  1634
+ACC X=-15016 Y=  4296 Z=  1304 | GYRO X=  -374 Y=   538 Z=  -494
+ACC X=-15344 Y=  3916 Z=  1800 | GYRO X=   644 Y=   229 Z=   155
+ACC X=-15328 Y=  3836 Z=  1936 | GYRO X=   276 Y=   336 Z=   -15
+ACC X=-15380 Y=  3808 Z=  1892 | GYRO X=   154 Y=   388 Z=   -86
+ACC X=-15328 Y=  3600 Z=  2472 | GYRO X=  4004 Y=  2061 Z=  3794
+ACC X=-14300 Y=  5400 Z=  1152 | GYRO X= -3400 Y=  1159 Z= -1177
+ACC X=-14764 Y=  4612 Z=  1628 | GYRO X=  1399 Y=  -138 Z=   291
+ACC X=-14556 Y=  4580 Z=  1368 | GYRO X=  5137 Y=  8764 Z= -1046
+ACC X=-15572 Y=  3632 Z=   116 | GYRO X=    90 Y=  5203 Z= -2515
+ACC X=-16276 Y=  3372 Z= -1776 | GYRO X= -2750 Y=   805 Z= -1294
+ACC X=-15068 Y=  3836 Z=  -740 | GYRO X=   153 Y= -1523 Z=    67
+ACC X=-15928 Y=  2780 Z=    92 | GYRO X=-11008 Y=  1112 Z= -1832
+ACC X=-16528 Y=  3136 Z=  2952 | GYRO X= -8641 Y= 15798 Z= -3164
+ACC X=-19896 Y=  2096 Z= -7488 | GYRO X=  1110 Y= 32767 Z=  2642
+ACC X=-18372 Y=  1600 Z= -6292 | GYRO X=  6020 Y=-10821 Z= -6104
+ACC X= -9968 Y= 12924 Z=-13600 | GYRO X=  1554 Y= -1038 Z=  8386
+ACC X=-15924 Y=  1184 Z= -6732 | GYRO X=  7251 Y= 13165 Z= -1099
+ACC X=-11000 Y=  6788 Z= -5220 | GYRO X=  9785 Y= -5317 Z= -2534
+ACC X= -8024 Y=  4920 Z= -3540 | GYRO X=  4392 Y= -6849 Z=  8758
+ACC X=-11652 Y=  2584 Z= -8360 | GYRO X=  5969 Y= -8650 Z=  5355
+ACC X=-10372 Y=  2448 Z= -6916 | GYRO X= 10791 Y= -7955 Z=  -902
+ACC X=-12160 Y=  2900 Z= -6224 | GYRO X=  4237 Y=  4823 Z=  2894
+ACC X=-14456 Y=  1384 Z= -5012 | GYRO X=  1482 Y=  2398 Z=   945
+ACC X=-17260 Y=  2112 Z= -7436 | GYRO X= -5199 Y=  4360 Z= -6717
+ACC X=-14712 Y=  1656 Z= -7552 | GYRO X= -5110 Y= -3217 Z= -1953
+ACC X=-13084 Y=  1116 Z= -6484 | GYRO X= -1713 Y=  3243 Z= -1374
+ACC X=-23684 Y=  1016 Z=  2296 | GYRO X= 19041 Y=  5610 Z= -4063
+ACC X=-13156 Y=  2736 Z= -7004 | GYRO X=  5012 Y=  7470 Z= -2400
+ACC X=-13528 Y=   252 Z= -6916 | GYRO X= -7722 Y= 10947 Z=-10093
+ACC X=-12520 Y= -1272 Z= -8824 | GYRO X= -3895 Y=  5038 Z=-14322
+ACC X= -6716 Y=   852 Z=-15216 | GYRO X= -8140 Y=  4303 Z=-18579
+ACC X=-11536 Y= -4748 Z= -8896 | GYRO X=   853 Y=   513 Z= -1812
+ACC X=-11544 Y= -4976 Z= -8772 | GYRO X= -1050 Y=  2569 Z= -4177
+ACC X=-11908 Y= -5664 Z= -8004 | GYRO X=  6922 Y=  1486 Z= -1568
+ACC X=-10820 Y= -5004 Z= -9072 | GYRO X= -1354 Y=  1441 Z= -2088
+ACC X=-11476 Y= -5032 Z= -8860 | GYRO X=  2747 Y= -5806 Z=  8477
+ACC X=-13456 Y= -4164 Z= -5972 | GYRO X=  1729 Y= -8933 Z= 12297
+ACC X=-14864 Y= -2904 Z= -7956 | GYRO X=  9597 Y=-13283 Z= 11006
+ACC X=-15684 Y=  3188 Z= -1644 | GYRO X=-16579 Y= -1378 Z=-11066
+ACC X=-15792 Y=  -220 Z= -2080 | GYRO X= -2267 Y= -7756 Z=  2709
+ACC X=-16044 Y=  -636 Z= -1944 | GYRO X= -3950 Y=  2147 Z= -3889
+ACC X=-15784 Y=   156 Z=  -724 | GYRO X=   782 Y= -4330 Z=  2316
+ACC X=-15632 Y=    32 Z=  2052 | GYRO X= -6760 Y=-24038 Z=  6680
+ACC X=-15296 Y= 11972 Z= 10504 | GYRO X=-14925 Y= -6446 Z= -4774
+ACC X=-15480 Y=  1916 Z=  4384 | GYRO X= -3818 Y=  1646 Z=   651
+ACC X=-15064 Y=  4312 Z=  7504 | GYRO X=    73 Y= -4579 Z= -6203
+ACC X=-14068 Y=  9300 Z= 13268 | GYRO X=-18067 Y= 21640 Z=-18955
+ACC X=-13000 Y=  2824 Z= 10152 | GYRO X= -1618 Y=  1309 Z= -1251
+ACC X=-12920 Y=  2940 Z= 10240 | GYRO X=  -169 Y=   671 Z=  -387
+ACC X=-12900 Y=  2968 Z= 10352 | GYRO X=   124 Y=   420 Z=  -170
+ACC X=-12860 Y=  3040 Z= 10540 | GYRO X=  -771 Y=   294 Z=  -226
+ACC X=-12728 Y=  3172 Z= 10424 | GYRO X=   452 Y=   115 Z=   112
+ACC X=-12756 Y=  3184 Z= 10428 | GYRO X=   293 Y=   263 Z=    -3
+ACC X=-12616 Y=  3232 Z= 10388 | GYRO X=   401 Y=   184 Z=    56
+ACC X=-12748 Y=  3268 Z= 10436 | GYRO X=   126 Y=   317 Z=   -84
+ACC X=-12704 Y=  3220 Z= 10496 | GYRO X=   123 Y=   369 Z=   -98
+ACC X=-12696 Y=  3212 Z= 10412 | GYRO X=   236 Y=   305 Z=   -78
+ACC X=-12744 Y=  3264 Z= 10524 | GYRO X=   197 Y=   319 Z=   -87
+ACC X=-12644 Y=  3304 Z= 10436 | GYRO X=   209 Y=   339 Z=   -63
+ACC X=-12640 Y=  3308 Z= 10456 | GYRO X=   174 Y=   299 Z=   -47
+ACC X=-12628 Y=  3340 Z= 10624 | GYRO X=   175 Y=   353 Z=   -84
+ACC X=-12660 Y=  3444 Z= 10464 | GYRO X=    64 Y=   369 Z=  -102
+ACC X=-12644 Y=  3332 Z= 10520 | GYRO X=   138 Y=   367 Z=  -108
+ACC X=-12644 Y=  3324 Z= 10608 | GYRO X=   189 Y=   376 Z=   -82
+ACC X=-12576 Y=  3376 Z= 10556 | GYRO X=   171 Y=   333 Z=   -93
+ACC X=-12592 Y=  3388 Z= 10504 | GYRO X=   150 Y=   343 Z=   -70
+ACC X=-12636 Y=  3404 Z= 10404 | GYRO X=   117 Y=   324 Z=   -99
+ACC X=-12480 Y=  3472 Z= 10428 | GYRO X=  -438 Y=   653 Z=  -374
+ACC X=-12628 Y=  3396 Z= 10552 | GYRO X=    67 Y=   433 Z=  -164
+ACC X=-12596 Y=  3364 Z= 10552 | GYRO X=   103 Y=   404 Z=  -107
+ACC X=-12540 Y=  3352 Z= 10516 | GYRO X=   199 Y=   347 Z=   -47
+ACC X=-12512 Y=  3376 Z= 10532 | GYRO X=   158 Y=   367 Z=   -91
+ACC X=-12524 Y=  3360 Z= 10480 | GYRO X=    76 Y=   372 Z=  -113
+ACC X=-12632 Y=  3416 Z= 10484 | GYRO X=   102 Y=   376 Z=   -75
+ACC X=-12624 Y=  3392 Z= 10512 | GYRO X=   157 Y=   333 Z=  -113
+ACC X=-12556 Y=  3376 Z= 10616 | GYRO X=   121 Y=   388 Z=   -49
+ACC X=-12536 Y=  3364 Z= 10668 | GYRO X=   139 Y=   361 Z=   -60
+ACC X=-12556 Y=  3416 Z= 10516 | GYRO X=   198 Y=   378 Z=   -76
+ACC X=-12532 Y=  3452 Z= 10524 | GYRO X=    74 Y=   423 Z=   -99
+ACC X=-12580 Y=  3428 Z= 10588 | GYRO X=   113 Y=   385 Z=  -106
+ACC X=-12548 Y=  3364 Z= 10656 | GYRO X=   103 Y=   380 Z=   -74
+ACC X=-12504 Y=  3424 Z= 10620 | GYRO X=   155 Y=   381 Z=  -100
+ACC X=-12512 Y=  3400 Z= 10728 | GYRO X=   120 Y=   373 Z=   -79
+ACC X=-12536 Y=  3360 Z= 10636 | GYRO X=   118 Y=   364 Z=   -96
+ACC X=-12532 Y=  3392 Z= 10552 | GYRO X=   114 Y=   392 Z=  -100
+ACC X=-12544 Y=  3472 Z= 10516 | GYRO X=    79 Y=   409 Z=  -109
+ACC X=-12528 Y=  3472 Z= 10664 | GYRO X=    73 Y=   411 Z=   -72
+ACC X=-12596 Y=  3364 Z= 10664 | GYRO X=   155 Y=   383 Z=   -88
+ACC X=-12584 Y=  3388 Z= 10512 | GYRO X=   218 Y=   358 Z=   -53
+ACC X=-12548 Y=  3384 Z= 10600 | GYRO X=   151 Y=   371 Z=  -112
+ACC X=-12596 Y=  3444 Z= 10672 | GYRO X=   111 Y=   385 Z=   -71
+ACC X=-12520 Y=  3472 Z= 10668 | GYRO X=   149 Y=   396 Z=  -122
+ACC X=-12536 Y=  3376 Z= 10600 | GYRO X=    54 Y=   355 Z=  -106
+ACC X=-12516 Y=  3396 Z= 10436 | GYRO X=    86 Y=   398 Z=  -121
+ACC X=-12512 Y=  3432 Z= 10620 | GYRO X=   126 Y=   361 Z=  -113
+ACC X=-12516 Y=  3464 Z= 10656 | GYRO X=   159 Y=   358 Z=   -98
+ACC X=-12496 Y=  3424 Z= 10580 | GYRO X=    45 Y=   387 Z=  -136
+ACC X=-12568 Y=  3392 Z= 10636 | GYRO X=   -30 Y=   403 Z=  -156
+ACC X=-12564 Y=  3368 Z= 10696 | GYRO X=    57 Y=   392 Z=   -91
+ACC X=-12572 Y=  3460 Z= 10636 | GYRO X=   110 Y=   413 Z=   -88
+ACC X=-12548 Y=  3388 Z= 10656 | GYRO X=    33 Y=   387 Z=  -116
+ACC X=-12504 Y=  3412 Z= 10684 | GYRO X=   108 Y=   398 Z=  -111
+ACC X=-12536 Y=  3476 Z= 10532 | GYRO X=   139 Y=   369 Z=   -64
+ACC X=-12500 Y=  3444 Z= 10640 | GYRO X=    83 Y=   409 Z=  -115
+ACC X=-12476 Y=  3464 Z= 10588 | GYRO X=    50 Y=   395 Z=  -132
+ACC X=-12516 Y=  3364 Z= 10588 | GYRO X=   195 Y=   376 Z=   -62
+ACC X=-12496 Y=  3448 Z= 10708 | GYRO X=   119 Y=   342 Z=   -90
+ACC X=-12532 Y=  3392 Z= 10708 | GYRO X=   126 Y=   389 Z=   -87
+ACC X=-12468 Y=  3440 Z= 10592 | GYRO X=   182 Y=   344 Z=   -83
+ACC X=-12536 Y=  3436 Z= 10696 | GYRO X=    77 Y=   408 Z=  -112
+ACC X=-12464 Y=  3376 Z= 10776 | GYRO X=    28 Y=   394 Z=  -115
+ACC X=-12516 Y=  3464 Z= 10704 | GYRO X=    86 Y=   424 Z=  -114
+ACC X=-12500 Y=  3412 Z= 10596 | GYRO X=   125 Y=   412 Z=  -104
+ACC X=-12512 Y=  3440 Z= 10764 | GYRO X=    94 Y=   380 Z=  -110
+ACC X=-12496 Y=  3412 Z= 10580 | GYRO X=   119 Y=   422 Z=  -110
+ACC X=-12524 Y=  3456 Z= 10644 | GYRO X=   135 Y=   424 Z=  -109
+ACC X=-12504 Y=  3464 Z= 10688 | GYRO X=   136 Y=   363 Z=  -107
+ACC X=-12528 Y=  3396 Z= 10588 | GYRO X=    98 Y=   418 Z=  -105
+ACC X=-12572 Y=  3448 Z= 10692 | GYRO X=   171 Y=   371 Z=  -134
+ACC X=-12460 Y=  3356 Z= 10688 | GYRO X=   150 Y=   399 Z=   -70
+ACC X=-12408 Y=  3432 Z= 10664 | GYRO X=   103 Y=   364 Z=  -124
+ACC X=-12776 Y=  3060 Z= 11068 | GYRO X=  2018 Y= -1031 Z=  1139
+ACC X=-12484 Y=  3392 Z= 10820 | GYRO X=   291 Y=   110 Z=   159
+ACC X=-12404 Y=  3424 Z= 10736 | GYRO X=   211 Y=   284 Z=    22
+ACC X=-12440 Y=  3396 Z= 10728 | GYRO X=   157 Y=   356 Z=   -69
+ACC X=-12424 Y=  3380 Z= 10756 | GYRO X=   140 Y=   356 Z=   -97
+ACC X=-12508 Y=  3424 Z= 10668 | GYRO X=    80 Y=   381 Z=  -118
+ACC X=-12464 Y=  3388 Z= 10848 | GYRO X=    24 Y=   443 Z=  -133
+ACC X=-12464 Y=  3368 Z= 10680 | GYRO X=    41 Y=   415 Z=  -134
+ACC X=-12452 Y=  3384 Z= 10768 | GYRO X=   106 Y=   389 Z=   -97
+ACC X=-12448 Y=  3392 Z= 10768 | GYRO X=   170 Y=   378 Z=   -81
+ACC X=-12480 Y=  3344 Z= 10720 | GYRO X=   118 Y=   358 Z=   -75
+ACC X=-12408 Y=  3440 Z= 10628 | GYRO X=   212 Y=   400 Z=   -91
+ACC X=-12416 Y=  3408 Z= 10612 | GYRO X=   160 Y=   368 Z=  -100
+ACC X=-12376 Y=  3400 Z= 10788 | GYRO X=   117 Y=   381 Z=  -147
+ACC X=-12412 Y=  3348 Z= 10728 | GYRO X=   125 Y=   377 Z=   -69
+ACC X=-12512 Y=  3372 Z= 10636 | GYRO X=   212 Y=   339 Z=   -43
+ACC X=-12452 Y=  3360 Z= 10800 | GYRO X=   191 Y=   354 Z=   -43
+ACC X=-12444 Y=  3432 Z= 10672 | GYRO X=   179 Y=   356 Z=   -92
+ACC X=-12492 Y=  3432 Z= 10740 | GYRO X=   119 Y=   415 Z=  -138
+ACC X=-12388 Y=  3340 Z= 10752 | GYRO X=   119 Y=   411 Z=   -72
+ACC X=-12516 Y=  3384 Z= 10780 | GYRO X=   171 Y=   319 Z=   -47
+ACC X=-12508 Y=  3392 Z= 10792 | GYRO X=   118 Y=   386 Z=   -94
+ACC X=-12456 Y=  3368 Z= 10756 | GYRO X=   199 Y=   357 Z=   -80
+ACC X=-12472 Y=  3316 Z= 10800 | GYRO X=   207 Y=   372 Z=   -59
+ACC X=-14832 Y=  5656 Z=  7148 | GYRO X= -5294 Y= -2938 Z= -1022
+ACC X=-17260 Y= -1764 Z= 16860 | GYRO X=-12952 Y=  6297 Z= -9407
+ACC X=-13696 Y=  1436 Z= 14644 | GYRO X= -6115 Y= -5265 Z= -9152
+ACC X=-10348 Y=  -524 Z= 11712 | GYRO X=  1504 Y=-18321 Z=   611
+ACC X= -8724 Y=  5908 Z= 21376 | GYRO X= -6694 Y=-18026 Z=  7944
+ACC X= -3200 Y= -1108 Z= 14372 | GYRO X=-14677 Y= 11213 Z=  2701
+ACC X= -7628 Y= -5980 Z=  9116 | GYRO X=   148 Y=-19227 Z= 22087
+ACC X= -5764 Y= -4272 Z= 17808 | GYRO X=-14235 Y= 12547 Z=  2688
+ACC X= -8616 Y= -3712 Z= 14876 | GYRO X= -5090 Y=  4079 Z=  4084
+ACC X= -7952 Y= -3812 Z= 12992 | GYRO X= -2059 Y=  3577 Z= -4509
+ACC X= -8344 Y= -2160 Z= 16696 | GYRO X= -1484 Y= -6276 Z=  4781
+ACC X= -6144 Y= -6272 Z= 14200 | GYRO X=  -977 Y= -3783 Z=  1800
+ACC X= -5396 Y= -4168 Z= 15624 | GYRO X=  5377 Y= -5287 Z= 10125
+ACC X= -5888 Y= -3240 Z= 14508 | GYRO X= 13602 Y=  1817 Z=  8738
+ACC X= -3392 Y=  2268 Z= 15704 | GYRO X=  8350 Y= -4817 Z=  8691
+ACC X= -5460 Y=  2772 Z= 17440 | GYRO X=  4476 Y=  2254 Z=  8700
+ACC X= -3972 Y=  6312 Z= 14912 | GYRO X= -4703 Y=  3725 Z=   706
+ACC X= -4688 Y=  5336 Z= 17068 | GYRO X=  3119 Y=  7101 Z= 11993
+ACC X= -6568 Y=  3724 Z= 19216 | GYRO X=  6512 Y=  4204 Z=  8181
+ACC X= -6640 Y=  1360 Z= 14924 | GYRO X=  5586 Y=  3131 Z= 13796
+ACC X= -5336 Y=  7068 Z= 13232 | GYRO X=  4675 Y=  5276 Z=  5597
+ACC X= -5208 Y= 11096 Z= 17660 | GYRO X=  -485 Y=  1278 Z=  8427
+ACC X= -6096 Y=  8628 Z= 12392 | GYRO X=  3839 Y=  1641 Z=  -538
+ACC X= -8816 Y=  4920 Z= 16296 | GYRO X=-24927 Y= -2221 Z= -9495
+ACC X= -5684 Y=  4076 Z= 17088 | GYRO X=-18683 Y=  3570 Z= -7111
+ACC X= -4012 Y=  2036 Z= 16856 | GYRO X=  -523 Y=-11603 Z=  1942
+ACC X= -2132 Y=  1156 Z= 17444 | GYRO X=   371 Y= -6851 Z= -1994
+ACC X= -1108 Y=   980 Z= 18136 | GYRO X=   322 Y=  -874 Z= -1773
+ACC X=  -812 Y=   664 Z= 17864 | GYRO X=  -154 Y=   498 Z=   731
+ACC X=  -392 Y= -2044 Z= 17528 | GYRO X=    43 Y= -3778 Z= -1124
+ACC X=  2108 Y=   872 Z= 18220 | GYRO X=    55 Y= -1562 Z=  -619
+ACC X=   628 Y=  -116 Z= 17460 | GYRO X=  -120 Y=  1696 Z=   356
+ACC X=  -724 Y=   264 Z= 17796 | GYRO X=  -196 Y=  5750 Z=  2721
+ACC X= -1036 Y=  -180 Z= 19404 | GYRO X=  4786 Y=  -535 Z=  1348
+ACC X=  -828 Y=  1496 Z= 17360 | GYRO X= -3948 Y=  1370 Z=  -640
+ACC X= -1320 Y=   712 Z= 17804 | GYRO X= -1033 Y=  -844 Z=  -289
+ACC X=  -692 Y=   336 Z= 17772 | GYRO X=    97 Y= -1031 Z=   164
+ACC X=  -168 Y=   268 Z= 18028 | GYRO X=   135 Y= -1995 Z=  -304
+ACC X=   152 Y=   140 Z= 17932 | GYRO X=   193 Y=  -392 Z=  -693
+ACC X=   476 Y=   240 Z= 17748 | GYRO X=    84 Y=   -40 Z=  -329
+ACC X=   352 Y=   152 Z= 17828 | GYRO X=   125 Y=  -913 Z=    79
+ACC X=   464 Y=   244 Z= 17756 | GYRO X=   149 Y=    43 Z=   -49
+ACC X=   476 Y=   272 Z= 18104 | GYRO X=   220 Y=  -749 Z= -1414
+ACC X=   612 Y=   248 Z= 17924 | GYRO X=   104 Y=   919 Z=  -328
+ACC X=   768 Y=   256 Z= 18056 | GYRO X=   140 Y=   235 Z=  -179
+ACC X=   736 Y=   272 Z= 17972 | GYRO X=   150 Y=   764 Z=  -493
+ACC X=   652 Y=   292 Z= 17956 | GYRO X=    85 Y=   343 Z=  -413
+ACC X=   544 Y=   344 Z= 17912 | GYRO X=   582 Y=  -236 Z=  -247
+ACC X=   792 Y=   268 Z= 18148 | GYRO X=   717 Y=  -216 Z=  -228
+ACC X=   684 Y=   248 Z= 17988 | GYRO X=   130 Y=   305 Z=  -173
+ACC X=   740 Y=   324 Z= 17744 | GYRO X=    65 Y=   367 Z=   -75
+ACC X=   700 Y=   244 Z= 18060 | GYRO X=   119 Y=   477 Z=  -217
+ACC X=   604 Y=   304 Z= 17992 | GYRO X=   120 Y=   188 Z=  -279
+ACC X=   648 Y=   212 Z= 18104 | GYRO X=   106 Y=   489 Z=   102
+ACC X=   788 Y=   312 Z= 17812 | GYRO X=   411 Y=   146 Z=  -278
+ACC X=   880 Y=   396 Z= 17584 | GYRO X=  -148 Y=   919 Z=   -68
+ACC X=   816 Y=   308 Z= 17948 | GYRO X=    91 Y=   237 Z=   -56
+ACC X=   728 Y=   272 Z= 18288 | GYRO X=   453 Y=   120 Z=   -65
+ACC X=   916 Y=   220 Z= 17844 | GYRO X=    18 Y=   654 Z=  -185
+ACC X=   652 Y=   292 Z= 17992 | GYRO X=  -629 Y=   895 Z=   172
+ACC X=  1004 Y=  -100 Z= 18176 | GYRO X=   244 Y=   905 Z=  -643
+ACC X=   588 Y=   384 Z= 17892 | GYRO X=   771 Y=  -200 Z=  -226
+ACC X=   736 Y=   612 Z= 17992 | GYRO X=   656 Y=   103 Z=  -551
+ACC X=   748 Y=   596 Z= 17900 | GYRO X=   350 Y=    58 Z=    -2
+ACC X=   684 Y=   800 Z= 17880 | GYRO X=   429 Y=   526 Z=  -642
+ACC X=   800 Y=   716 Z= 17944 | GYRO X=  -179 Y=   414 Z=   142
+ACC X=  1072 Y=   616 Z= 17960 | GYRO X=   249 Y=   593 Z=  -678
+ACC X=   900 Y=   620 Z= 17828 | GYRO X=  -436 Y=   641 Z=    44
+ACC X=  1020 Y=   760 Z= 17804 | GYRO X=   -60 Y=   199 Z=  -629
+ACC X=  1164 Y=   728 Z= 17944 | GYRO X=   338 Y=   113 Z=  -540
+ACC X=  1048 Y=   660 Z= 17824 | GYRO X=   -23 Y=   453 Z=  -185
+ACC X=  1028 Y=   676 Z= 17972 | GYRO X=  -142 Y=   413 Z=    56
+ACC X=   992 Y=   716 Z= 17832 | GYRO X=   465 Y=   -31 Z= -1021
+ACC X=   240 Y=  -120 Z= 17808 | GYRO X= -2506 Y=  1112 Z=  1941
+ACC X=  2224 Y= -1692 Z= 18100 | GYRO X=  1775 Y=  1476 Z=  1632
+ACC X=   164 Y=   656 Z= 17664 | GYRO X=  -755 Y=  1557 Z=  -963
+ACC X=   892 Y=    60 Z= 17780 | GYRO X=   210 Y=   -57 Z=  -270
+ACC X=   688 Y=   328 Z= 18040 | GYRO X=     3 Y=   364 Z=  -262
+ACC X=   896 Y=   428 Z= 17416 | GYRO X=  -177 Y=   394 Z=   120
+ACC X=   764 Y=   -96 Z= 17844 | GYRO X=   127 Y=   446 Z=  -918
+ACC X=   848 Y=   244 Z= 17844 | GYRO X=   159 Y=    93 Z=  -374
+ACC X=   912 Y=   284 Z= 17668 | GYRO X=   295 Y=   170 Z=  -131
+ACC X=   976 Y=   260 Z= 17844 | GYRO X=   165 Y=   352 Z=  -295
+ACC X=   860 Y=   268 Z= 17936 | GYRO X=   369 Y=   261 Z=  -458
+ACC X=   832 Y=   280 Z= 17912 | GYRO X=  -131 Y=   479 Z=    94
+ACC X=   976 Y=   288 Z= 17928 | GYRO X=   141 Y=   511 Z=   -65
+ACC X=   908 Y=   324 Z= 17912 | GYRO X=   153 Y=   564 Z=  -269
+ACC X=   868 Y=   236 Z= 17904 | GYRO X=   126 Y=   339 Z=  -120
+ACC X=  1276 Y=  -392 Z= 17940 | GYRO X=  -191 Y=   477 Z=  -541
+ACC X=   892 Y=   276 Z= 17932 | GYRO X=    63 Y=   337 Z=   -23
+ACC X=   884 Y=   304 Z= 17996 | GYRO X=   272 Y=   423 Z=  -241
+ACC X=   892 Y=   308 Z= 17756 | GYRO X=     9 Y=   435 Z=   -34
+ACC X=   960 Y=   400 Z= 17912 | GYRO X=   334 Y=   116 Z=  -175
+ACC X=   860 Y=   264 Z= 18008 | GYRO X=   462 Y=   147 Z=  -494
+ACC X=  1024 Y=   396 Z= 17900 | GYRO X=   -33 Y=   592 Z=   -85
+ACC X=  1116 Y=   368 Z= 17956 | GYRO X=   141 Y=   295 Z=   -22
+ACC X=  1104 Y=   436 Z= 17908 | GYRO X=   408 Y=    62 Z=  -395
+ACC X=  1052 Y=   420 Z= 17836 | GYRO X=   368 Y=   283 Z=  -294
+ACC X=  1036 Y=   372 Z= 17916 | GYRO X=    29 Y=   555 Z=  -105
+ACC X=  1036 Y=   472 Z= 17856 | GYRO X=   485 Y=    71 Z=  -201
+ACC X=  1112 Y=   488 Z= 17884 | GYRO X=   153 Y=   290 Z=   -76
+ACC X=  1136 Y=   500 Z= 17884 | GYRO X=   395 Y=   113 Z=  -183
+ACC X=  1228 Y=   512 Z= 17856 | GYRO X=   167 Y=   175 Z=  -115
+ACC X=  1204 Y=   436 Z= 17944 | GYRO X=   217 Y=   287 Z=  -123
+ACC X=  1076 Y=   512 Z= 17840 | GYRO X=   315 Y=   227 Z=  -181
+ACC X=  1148 Y=   428 Z= 18012 | GYRO X=   -27 Y=   453 Z=  -231
+ACC X=  1188 Y=   508 Z= 17848 | GYRO X=   431 Y=    14 Z=  -176
+ACC X=  1276 Y=   504 Z= 17792 | GYRO X=   277 Y=   226 Z=  -199
+ACC X=  1208 Y=   536 Z= 17888 | GYRO X=    85 Y=   454 Z=   -15
+ACC X=  1212 Y=   448 Z= 17920 | GYRO X=    15 Y=   497 Z=  -121
+ACC X=  1168 Y=   504 Z= 17928 | GYRO X=    83 Y=   405 Z=  -105
+ACC X=  1204 Y=   568 Z= 17824 | GYRO X=   229 Y=   288 Z=  -198
+ACC X=  1296 Y=   600 Z= 17924 | GYRO X=   188 Y=   193 Z=   -86
+ACC X=  1432 Y=   544 Z= 17572 | GYRO X=   304 Y=   342 Z=  -132
+ACC X=  1060 Y=   688 Z= 17916 | GYRO X=   -92 Y=   700 Z=  -387
+ACC X=  1244 Y=   600 Z= 17860 | GYRO X=    69 Y=   439 Z=    23
+ACC X=  1288 Y=   560 Z= 17964 | GYRO X=  -456 Y=   854 Z=   103
+ACC X=  1256 Y=   540 Z= 17980 | GYRO X=  -547 Y=   825 Z=   314
+ACC X=   964 Y=   268 Z= 18272 | GYRO X=  -317 Y=   808 Z=   123
+ACC X=  1100 Y=   212 Z= 18096 | GYRO X=    20 Y=   642 Z=   235
+ACC X=   996 Y=   464 Z= 17812 | GYRO X=   250 Y=   355 Z=  -210
+ACC X=  1108 Y=   356 Z= 17952 | GYRO X=    70 Y=   571 Z=    12
+ACC X=  1152 Y=   188 Z= 17880 | GYRO X=   281 Y=   547 Z=  -227
+ACC X=   992 Y=   280 Z= 17960 | GYRO X=  -177 Y=   758 Z=   262
+ACC X=   796 Y=   260 Z= 17864 | GYRO X=    26 Y=   705 Z=   140
+ACC X=  1080 Y=   544 Z= 18320 | GYRO X=  2076 Y=   894 Z=   962
+ACC X=   380 Y=  1180 Z= 17856 | GYRO X=  4506 Y=   767 Z=   272
+ACC X=   572 Y=  1476 Z= 17848 | GYRO X=  -474 Y=   976 Z=   273
+ACC X=   788 Y=  2368 Z= 17560 | GYRO X=   -90 Y=   997 Z=  3357
+ACC X=   428 Y=  1872 Z= 17836 | GYRO X=  1234 Y=  1262 Z=   720
+ACC X=   484 Y=  2828 Z= 18056 | GYRO X=  4874 Y=  2368 Z=  2306
+ACC X=  -424 Y=  2172 Z= 17652 | GYRO X=    12 Y=  3216 Z=  -180
+ACC X= -1780 Y=   980 Z= 18380 | GYRO X=  1408 Y=   617 Z=   516
+ACC X=  -868 Y=  3228 Z= 17944 | GYRO X=   736 Y=   393 Z=   -49
+ACC X= -1228 Y=  3180 Z= 19468 | GYRO X= -2587 Y= -1279 Z=  -831
+ACC X=  -224 Y=  1800 Z= 17936 | GYRO X= -2487 Y= -2035 Z= -2975
+ACC X= -1532 Y=  2656 Z= 16096 | GYRO X=   566 Y= -1583 Z= -5997
+ACC X=   920 Y=  3804 Z= 17160 | GYRO X=  1096 Y= -3389 Z= -7211
+ACC X=  1432 Y=  2128 Z= 18848 | GYRO X= -2826 Y= -1411 Z= -7789
+ACC X=  1232 Y=  1268 Z= 18032 | GYRO X= -1870 Y=  -493 Z= -6809
+ACC X=  1792 Y=  1804 Z= 18288 | GYRO X= -1575 Y=   -37 Z= -5619
+ACC X=  1928 Y=  2268 Z= 18128 | GYRO X=  2207 Y=  1053 Z= -3254
+ACC X=  1264 Y=  2940 Z= 16904 | GYRO X=  1181 Y=   348 Z= -3147
+ACC X=   820 Y=  2300 Z= 17896 | GYRO X=  2061 Y=  4021 Z= -1127
+ACC X=  1352 Y=  2044 Z= 17280 | GYRO X= -4917 Y=  2517 Z= -2131
+ACC X=   528 Y=  1668 Z= 18484 | GYRO X= -5665 Y= -1159 Z= -3360
+ACC X=   908 Y=   200 Z= 19956 | GYRO X= 26806 Y= -6340 Z=  2639
+ACC X=  1864 Y=   236 Z= 17360 | GYRO X= -8422 Y=  2351 Z= -2951
+ACC X=   192 Y= -2092 Z= 17244 | GYRO X= -6602 Y=  4388 Z= -2183
+ACC X=   164 Y= -1440 Z= 17352 | GYRO X= -1793 Y=  3911 Z=   164
+ACC X=   280 Y= -2584 Z= 18564 | GYRO X=  4260 Y=  -279 Z=  2573
+ACC X=  -824 Y= -1356 Z= 18460 | GYRO X=  2255 Y=  -621 Z=   881
+ACC X=   508 Y=  -428 Z= 18560 | GYRO X=  2188 Y=   127 Z=   203
+ACC X=  1388 Y=  1052 Z= 18488 | GYRO X=  3406 Y= -1511 Z=  1952
+ACC X=   604 Y=   824 Z= 17808 | GYRO X=   248 Y= -3986 Z=  1421
+ACC X=   452 Y=   360 Z= 18344 | GYRO X= -1003 Y=  4647 Z=  -907
+ACC X=  1544 Y=  1096 Z= 17732 | GYRO X=  2423 Y= -4090 Z=  2189
+ACC X=  1632 Y=  1096 Z= 18284 | GYRO X=  1938 Y=  5164 Z=   686
+ACC X=  1272 Y=  1020 Z= 17956 | GYRO X=   472 Y=  -807 Z=  -445
+ACC X=  1076 Y=  1524 Z= 17568 | GYRO X=  -976 Y=  2518 Z=  1314
+ACC X=   500 Y=   528 Z= 18060 | GYRO X= -1468 Y=   982 Z= -1101
+ACC X=  -108 Y=   384 Z= 17916 | GYRO X=  2828 Y= -2247 Z=  -916
+ACC X=  1332 Y=   800 Z= 17632 | GYRO X=  -935 Y= -1463 Z=  -214
+ACC X=  -576 Y=   292 Z= 19484 | GYRO X= -3324 Y=  1472 Z=  -571
+ACC X=   -12 Y=  2672 Z= 19080 | GYRO X=   -48 Y=   -64 Z=  1356
+ACC X=   -56 Y=   200 Z= 16536 | GYRO X= -1243 Y= -1806 Z=   159
+ACC X=   592 Y=  2360 Z= 19108 | GYRO X=   882 Y= -2458 Z=  1246
+ACC X=  1336 Y=   304 Z= 16644 | GYRO X= -1043 Y=  -565 Z=  -972
+ACC X=  1524 Y=   376 Z= 17404 | GYRO X=  1600 Y=  1015 Z=  -185
+ACC X=  1368 Y=   712 Z= 17248 | GYRO X=   209 Y=  1368 Z=  -275
+ACC X=  1096 Y=  1100 Z= 17736 | GYRO X=   249 Y=   730 Z=    12
+ACC X=   936 Y=  1688 Z= 18260 | GYRO X=   315 Y=   400 Z=   237
+ACC X=   752 Y=   996 Z= 17344 | GYRO X=   108 Y=   240 Z=  -186
+ACC X=  1140 Y=  1056 Z= 17596 | GYRO X=  -235 Y=   396 Z=   -48
+ACC X=   988 Y=  1148 Z= 17884 | GYRO X=  -448 Y=  -242 Z=    33
+ACC X=   808 Y=  1088 Z= 17988 | GYRO X=  -517 Y=    32 Z=  -205
+ACC X=  1192 Y=   888 Z= 17824 | GYRO X=  -235 Y=   -90 Z=    85
+ACC X=   924 Y=   488 Z= 17868 | GYRO X=   553 Y=  1569 Z=  -351
+ACC X=  1156 Y=   612 Z= 17964 | GYRO X=   110 Y=   693 Z=  -346
+ACC X=   972 Y=   400 Z= 17852 | GYRO X=   283 Y=   348 Z=  -211
+ACC X=   924 Y=   632 Z= 17668 | GYRO X=  -201 Y=   710 Z=   -64
+ACC X=  1056 Y=   560 Z= 17704 | GYRO X=   -58 Y=   350 Z=  -276
+ACC X=  1016 Y=   100 Z= 17676 | GYRO X=  -443 Y=   274 Z=  -219
+ACC X=   980 Y=   112 Z= 18000 | GYRO X=  -156 Y=   365 Z=  -168
+ACC X=  1004 Y=   460 Z= 18064 | GYRO X=   372 Y=   729 Z=  -145
+ACC X=  1020 Y=   312 Z= 17532 | GYRO X=    56 Y=   466 Z=   -82
+ACC X=   984 Y=   356 Z= 17936 | GYRO X=   662 Y=   593 Z=  -123
+ACC X=   952 Y=   516 Z= 17448 | GYRO X=    71 Y=   749 Z=    89
+ACC X=  1052 Y=   732 Z= 18272 | GYRO X=    95 Y=   259 Z=    79
+ACC X=   940 Y=  -112 Z= 17752 | GYRO X=   158 Y=   440 Z=  -321
+ACC X=   980 Y=    60 Z= 18232 | GYRO X=  -577 Y=   190 Z=  -190
+ACC X=   940 Y=  -260 Z= 18288 | GYRO X=   202 Y=   677 Z=   -48
+ACC X=   960 Y=    12 Z= 17748 | GYRO X=   239 Y=   567 Z=  -117
+ACC X=   840 Y=  -144 Z= 17984 | GYRO X=   225 Y=   404 Z=   -49
+ACC X=   936 Y=    12 Z= 18212 | GYRO X=    54 Y=   624 Z=   -14
+ACC X=   848 Y=  -184 Z= 17868 | GYRO X=    15 Y=   485 Z=  -279
+ACC X=   864 Y=   -56 Z= 17908 | GYRO X=    28 Y=   443 Z=  -252
+ACC X=   704 Y=   252 Z= 18092 | GYRO X=   222 Y=   333 Z=   -72
+ACC X=   720 Y=  -104 Z= 18080 | GYRO X=   228 Y=   265 Z=  -160
+ACC X=   832 Y=    56 Z= 17608 | GYRO X=    15 Y=   329 Z=  -121
+ACC X=   792 Y=   -96 Z= 18012 | GYRO X=   173 Y=   418 Z=  -137
+ACC X=   872 Y=    28 Z= 17720 | GYRO X=    19 Y=   495 Z=  -178
+ACC X=   736 Y=    28 Z= 18044 | GYRO X=   244 Y=   421 Z=   -73
+ACC X=   844 Y=   144 Z= 17740 | GYRO X=    36 Y=   342 Z=  -162
+ACC X=   788 Y=     4 Z= 17772 | GYRO X=   -69 Y=   348 Z=  -242
+ACC X=   780 Y=  -172 Z= 17904 | GYRO X=   154 Y=   439 Z=  -231
+ACC X=   756 Y=    12 Z= 17896 | GYRO X=    97 Y=   217 Z=    -3
+ACC X=   836 Y=  -136 Z= 17776 | GYRO X=   333 Y=   322 Z=   -35
+ACC X=   704 Y=  -132 Z= 18248 | GYRO X=   178 Y=   364 Z=  -108
+ACC X=   740 Y=    -4 Z= 18244 | GYRO X=  -480 Y=   201 Z=    41
+ACC X=   728 Y=  -440 Z= 17688 | GYRO X=  -187 Y=   402 Z=  -295
+ACC X=   840 Y=   -52 Z= 17856 | GYRO X=  -162 Y=   343 Z=  -295
+ACC X=   764 Y=  -128 Z= 18012 | GYRO X=    94 Y=   426 Z=  -208
+ACC X=   740 Y=  -168 Z= 18060 | GYRO X=    69 Y=   489 Z=   -93
+ACC X=   708 Y=   -40 Z= 17944 | GYRO X=  -267 Y=   325 Z=  -194
+ACC X=   764 Y=  -328 Z= 17996 | GYRO X=   622 Y=   570 Z=  -111
+ACC X=   740 Y=  -444 Z= 18056 | GYRO X=   361 Y=   541 Z=  -182
+ACC X=   760 Y=  -364 Z= 17496 | GYRO X=  -311 Y=   -17 Z=   -49
+ACC X=   804 Y=  -272 Z= 18148 | GYRO X=   224 Y=   735 Z=  -161
+ACC X=   716 Y=  -360 Z= 18016 | GYRO X=   359 Y=   419 Z=    54
+ACC X=   760 Y=  -276 Z= 17928 | GYRO X=   218 Y=   446 Z=  -197
+ACC X=   704 Y=  -272 Z= 17752 | GYRO X=   102 Y=   639 Z=  -167
+ACC X=   688 Y=  -392 Z= 18408 | GYRO X=   268 Y=   298 Z=   -76
+ACC X=   652 Y=  -488 Z= 18060 | GYRO X=  -153 Y=    54 Z=  -156
+ACC X=   804 Y=  -460 Z= 17988 | GYRO X=   -57 Y=   358 Z=  -250
+ACC X=   768 Y=  -292 Z= 17992 | GYRO X=   -61 Y=   169 Z=  -179
+ACC X=   836 Y=  -228 Z= 18044 | GYRO X=  -118 Y=   294 Z=  -301
+ACC X=   684 Y=  -420 Z= 18156 | GYRO X=    33 Y=   473 Z=  -283
+ACC X=   716 Y=  -420 Z= 17668 | GYRO X=    -7 Y=   260 Z=   -51
+ACC X=   792 Y=  -432 Z= 17876 | GYRO X=   289 Y=   559 Z=  -164
+ACC X=   744 Y=  -572 Z= 17636 | GYRO X=    31 Y=   326 Z=  -152
+ACC X=   704 Y=  -332 Z= 17496 | GYRO X=   -28 Y=   412 Z=  -109
+ACC X=   700 Y=  -476 Z= 17980 | GYRO X=   124 Y=   403 Z=  -165
+ACC X=   784 Y=  -528 Z= 17340 | GYRO X=   267 Y=   518 Z=  -147
+ACC X=   760 Y=  -716 Z= 17884 | GYRO X=   429 Y=   380 Z=  -198
+ACC X=   672 Y=  -468 Z= 17916 | GYRO X=   229 Y=   466 Z=  -135
+ACC X=   676 Y=  -556 Z= 17604 | GYRO X=   384 Y=   528 Z=   -40
+ACC X=   664 Y=  -488 Z= 17964 | GYRO X=   145 Y=   446 Z=  -272
+ACC X=   700 Y=  -236 Z= 17968 | GYRO X=   426 Y=   379 Z=  -139
+ACC X=   616 Y=  -268 Z= 17480 | GYRO X=   779 Y=   517 Z=   -28
+ACC X=   468 Y=  -516 Z= 18616 | GYRO X=   671 Y=   522 Z=  -105
+ACC X=   664 Y=   128 Z= 18140 | GYRO X=  1818 Y=   454 Z=   -92
+ACC X=   556 Y=    88 Z= 18012 | GYRO X=  1315 Y=   154 Z=    85
+ACC X=   616 Y=   448 Z= 18332 | GYRO X=   620 Y=   147 Z=  -307
+ACC X=   716 Y=   604 Z= 17632 | GYRO X=   499 Y=   633 Z=  -140
+ACC X=   820 Y=   484 Z= 18060 | GYRO X=   532 Y=   265 Z=  -214
+ACC X=   820 Y=  1076 Z= 18152 | GYRO X=  1013 Y=    -3 Z=  -335
+ACC X=  1076 Y=   684 Z= 18152 | GYRO X=  1640 Y=  -623 Z=  -570
+ACC X=  1184 Y=  1676 Z= 18048 | GYRO X=  1123 Y=  -925 Z=  -403
+ACC X=  1616 Y=  1056 Z= 17568 | GYRO X=   520 Y= -1018 Z=  -307
+ACC X=  1820 Y=  1928 Z= 17692 | GYRO X=  -534 Y=  1214 Z=   -43
+ACC X=  1908 Y=  1148 Z= 16936 | GYRO X=  -546 Y=  -218 Z=    26
+ACC X=  1860 Y=  1312 Z= 18640 | GYRO X= -1482 Y=   343 Z=   126
+ACC X=  2032 Y=  1028 Z= 18344 | GYRO X=   290 Y=   586 Z=  -340
+ACC X=  1920 Y=   972 Z= 18516 | GYRO X=   -39 Y=   -58 Z=   260
+ACC X=  2000 Y=   992 Z= 18036 | GYRO X=  1537 Y=   721 Z=  -112
+ACC X=  1864 Y=  1244 Z= 18088 | GYRO X=   566 Y=   802 Z=  -102
+ACC X=  1812 Y=   996 Z= 17804 | GYRO X=   294 Y=  1031 Z=  -187
+ACC X=  1832 Y=   824 Z= 18160 | GYRO X=   -73 Y=   373 Z=   -99
+ACC X=  1840 Y=  1216 Z= 18164 | GYRO X=  -130 Y=   197 Z=  -114
+ACC X=  1744 Y=  1276 Z= 18500 | GYRO X=   294 Y=   554 Z=  -287
+ACC X=  2012 Y=  1536 Z= 17736 | GYRO X=   743 Y=   417 Z=    29
+ACC X=  1916 Y=  1440 Z= 17944 | GYRO X=  1109 Y=   635 Z=  -314
+ACC X=  2096 Y=  1604 Z= 18248 | GYRO X=   959 Y=   704 Z=  -517
+ACC X=  1964 Y=  1704 Z= 17752 | GYRO X=  1555 Y=   -72 Z=  -326
+ACC X=  1908 Y=  1940 Z= 17284 | GYRO X=   390 Y=   255 Z=  -102
+ACC X=  2252 Y=  2004 Z= 17384 | GYRO X=    -5 Y=  -503 Z=  -525
+ACC X=  2368 Y=  2212 Z= 17960 | GYRO X=   538 Y= -1663 Z=  -778
+ACC X=  2376 Y=  2656 Z= 18376 | GYRO X=  -777 Y= -2193 Z=  -530
+ACC X=  3188 Y=  2368 Z= 17348 | GYRO X=   136 Y=  -976 Z=  -276
+ACC X=  3492 Y=  2480 Z= 17364 | GYRO X=   432 Y= -2196 Z=  -920
+ACC X=  3696 Y=  2896 Z= 17388 | GYRO X=   620 Y= -1469 Z= -1036
+ACC X=  3988 Y=  2488 Z= 17420 | GYRO X=  -113 Y=     4 Z=   278
+ACC X=  4436 Y=  3012 Z= 17392 | GYRO X=  -505 Y= -1396 Z=  -326
+ACC X=  4660 Y=  2868 Z= 17236 | GYRO X=   -42 Y= -1504 Z=  -336
+ACC X=  4952 Y=  2532 Z= 17260 | GYRO X=   -83 Y= -1333 Z=  -392
+ACC X=  5304 Y=  2388 Z= 16944 | GYRO X=  -820 Y= -2849 Z=  -568
+ACC X=  5488 Y=  2076 Z= 16984 | GYRO X=  -513 Y= -2987 Z= -1263
+ACC X=  6408 Y=  2820 Z= 16668 | GYRO X=    62 Y= -1158 Z=  -379
+ACC X=  6752 Y=  3120 Z= 16248 | GYRO X=    51 Y= -1442 Z=  -251
+ACC X=  6880 Y=  2244 Z= 16208 | GYRO X=   258 Y=  -410 Z=   -62
+ACC X=  6884 Y=  2848 Z= 16136 | GYRO X=   643 Y=  -493 Z=  -481
+ACC X=  7452 Y=  2784 Z= 16492 | GYRO X=   -11 Y= -1564 Z= -1181
+ACC X=  7652 Y=  2364 Z= 16188 | GYRO X=   -75 Y=  -179 Z=  -111
+ACC X=  7512 Y=  2708 Z= 16260 | GYRO X=  1089 Y= -1350 Z= -1285
+ACC X=  7620 Y=  3212 Z= 15704 | GYRO X=   917 Y= -1264 Z= -1361
+ACC X=  8340 Y=  2192 Z= 15476 | GYRO X=  -963 Y= -1067 Z=  -848
+ACC X=  8176 Y=  3284 Z= 15496 | GYRO X=  -268 Y=   378 Z=   126
+ACC X=  7924 Y=  2720 Z= 16052 | GYRO X=  -327 Y=   643 Z=   -43
+ACC X=  8348 Y=  2808 Z= 16280 | GYRO X= -1092 Y=     1 Z=   150
+ACC X=  7732 Y=  2404 Z= 15336 | GYRO X=  -561 Y=  2478 Z=   287
+ACC X=  6044 Y=    32 Z= 16760 | GYRO X=   653 Y=  2906 Z=   803
+ACC X=  5904 Y=  2736 Z= 15916 | GYRO X= -1129 Y=  4691 Z=  1958
+ACC X=  4860 Y=  1352 Z= 16680 | GYRO X=  -967 Y=  7581 Z=  2777
+ACC X=  4116 Y=  2992 Z= 18520 | GYRO X= -2139 Y=  5275 Z=  2809
+ACC X=  2336 Y=  1716 Z= 17408 | GYRO X= -3316 Y= 11194 Z=  2989
+ACC X=  1920 Y=  1764 Z= 18700 | GYRO X=  1508 Y=  3326 Z=   660
+ACC X=  1008 Y=   444 Z= 18608 | GYRO X=   195 Y=  1423 Z=   220
+ACC X=   472 Y=  1216 Z= 18092 | GYRO X=  1172 Y=  2438 Z=  -312
+ACC X=  -252 Y=   568 Z= 18384 | GYRO X=   632 Y=  3263 Z= -1041
+ACC X=  -520 Y=   504 Z= 16856 | GYRO X=   -16 Y=  1049 Z=  -305
+ACC X=  -896 Y=  1424 Z= 18548 | GYRO X=   544 Y=  2205 Z=  -375
+ACC X= -1380 Y=   860 Z= 18144 | GYRO X=   198 Y=  1317 Z=  -410
+ACC X= -1364 Y=  1688 Z= 17896 | GYRO X=  -181 Y=  1225 Z=  -311
+ACC X= -1724 Y=  1708 Z= 17624 | GYRO X=  -438 Y= -1076 Z=   306
+ACC X=  -860 Y=  1188 Z= 17168 | GYRO X=  -288 Y=  -731 Z=   -43
+ACC X=  -872 Y=  1272 Z= 17924 | GYRO X=  -587 Y=  -811 Z=  -236
+ACC X=  -668 Y=  1052 Z= 17868 | GYRO X=    42 Y= -1976 Z=   127
+ACC X=  -168 Y=  1268 Z= 17612 | GYRO X=   730 Y=  -374 Z=   247
+ACC X=   -48 Y=  1036 Z= 17424 | GYRO X=  1098 Y=  -101 Z=   656
+ACC X=   128 Y=   892 Z= 17360 | GYRO X=   465 Y=   526 Z=   218
+ACC X=   180 Y=  1236 Z= 17588 | GYRO X=  -313 Y=    68 Z=   -89
+ACC X=    28 Y=  1348 Z= 17508 | GYRO X=   566 Y=   425 Z=  -175
+ACC X=   180 Y=  1676 Z= 18472 | GYRO X=   201 Y=  -124 Z=  -124
+ACC X=   248 Y=  1424 Z= 17712 | GYRO X=   120 Y=   811 Z=  -374
+ACC X=   116 Y=  1576 Z= 17660 | GYRO X=    95 Y=   225 Z=   -77
+ACC X=   100 Y=  1012 Z= 18244 | GYRO X=  -370 Y=  -393 Z=    98
+ACC X=   388 Y=  1560 Z= 17672 | GYRO X=   179 Y=    97 Z=   -57
+ACC X=   352 Y=  1908 Z= 18620 | GYRO X=   401 Y=   508 Z=    48
+ACC X=   308 Y=  1472 Z= 18300 | GYRO X=   187 Y=   313 Z=   -87
+ACC X=   512 Y=  1284 Z= 16440 | GYRO X=    64 Y=    42 Z=   132
+ACC X=   504 Y=  1644 Z= 18096 | GYRO X=   -16 Y=   475 Z=  -139
+ACC X=   548 Y=  1424 Z= 18304 | GYRO X=   291 Y=   228 Z=    -1
+ACC X=   736 Y=  1896 Z= 18136 | GYRO X=   297 Y=   744 Z=  -124
+ACC X=   528 Y=  1508 Z= 18172 | GYRO X=   -96 Y=   231 Z=  -111
+ACC X=   420 Y=  1348 Z= 18140 | GYRO X=    -1 Y=   696 Z=  -133
+ACC X=   472 Y=  1928 Z= 17864 | GYRO X=  -193 Y=   758 Z=    90
+ACC X=   360 Y=  1472 Z= 17840 | GYRO X=    36 Y=   930 Z=   372
+ACC X=   168 Y=  1464 Z= 18136 | GYRO X=  -195 Y=  1195 Z=  -339
+ACC X=    48 Y=  1772 Z= 17764 | GYRO X=   420 Y=   462 Z=   -92
+ACC X=   148 Y=  1692 Z= 17564 | GYRO X=   186 Y=   484 Z=  -120
+ACC X=    48 Y=  1536 Z= 17952 | GYRO X=   -54 Y=    14 Z=  -144
+ACC X=   -64 Y=  1724 Z= 17564 | GYRO X=    32 Y=  1207 Z=    73
+ACC X=    48 Y=  1384 Z= 18512 | GYRO X=    33 Y=   393 Z=   -25
+ACC X=  -164 Y=  1440 Z= 17592 | GYRO X=    -3 Y=   336 Z=   -34
+ACC X=  -120 Y=  1672 Z= 18076 | GYRO X=   703 Y=   760 Z=    -4
+ACC X=    48 Y=  1756 Z= 17692 | GYRO X=   700 Y=   293 Z=   -33
+ACC X=     4 Y=  1608 Z= 17468 | GYRO X=   214 Y=   268 Z=   -49
+ACC X=  -208 Y=   860 Z= 18108 | GYRO X=    26 Y=   434 Z=  -225
+ACC X=   -40 Y=  1524 Z= 18096 | GYRO X=   -47 Y=   287 Z=   -39
+ACC X=   -28 Y=  1348 Z= 17668 | GYRO X=     1 Y=   521 Z=   -34
+ACC X=   -64 Y=  1504 Z= 18020 | GYRO X=  -101 Y=   428 Z=  -150
+ACC X=    32 Y=  1268 Z= 17700 | GYRO X=   390 Y=   721 Z=   -53
+ACC X=  -128 Y=  1496 Z= 18040 | GYRO X=   321 Y=   280 Z=   -81
+ACC X=   -52 Y=  1480 Z= 17420 | GYRO X=   329 Y=   521 Z=    18
+ACC X=   -56 Y=  1484 Z= 17740 | GYRO X=    53 Y=   531 Z=  -136
+ACC X=   -64 Y=  1352 Z= 17984 | GYRO X=   234 Y=   387 Z=    22
+ACC X=  -112 Y=  1320 Z= 18244 | GYRO X=    62 Y=   397 Z=  -186
+ACC X=   -76 Y=  1264 Z= 17728 | GYRO X=   297 Y=   340 Z=  -109
+ACC X=  -256 Y=  1552 Z= 17820 | GYRO X=   123 Y=   630 Z=   -47
+ACC X=  -116 Y=  1416 Z= 17936 | GYRO X=   243 Y=   257 Z=   -32
+ACC X=  -156 Y=  1524 Z= 17916 | GYRO X=    15 Y=   152 Z=    18
+ACC X=  -232 Y=  1528 Z= 18000 | GYRO X=    58 Y=   222 Z=  -230
+ACC X=  -208 Y=  1480 Z= 18356 | GYRO X=  -298 Y=   545 Z=  -266
+ACC X=   -92 Y=  1448 Z= 17576 | GYRO X=   140 Y=   454 Z=  -202
+ACC X=  -132 Y=  1320 Z= 18088 | GYRO X=   267 Y=   497 Z=   -82
+ACC X=  -192 Y=  1308 Z= 18108 | GYRO X=   143 Y=   317 Z=  -144
+ACC X=  -112 Y=  1724 Z= 17848 | GYRO X=    18 Y=   661 Z=   -76
+ACC X=  -140 Y=   976 Z= 17892 | GYRO X=   -16 Y=   407 Z=  -431
+ACC X=  -308 Y=  1364 Z= 17632 | GYRO X=   104 Y=   832 Z=  -232
+ACC X=  -344 Y=  1028 Z= 18272 | GYRO X=   -39 Y=   564 Z=   -41
+ACC X=  -640 Y=  1432 Z= 18340 | GYRO X=  -117 Y=   246 Z=     2
+ACC X=  -180 Y=  1156 Z= 17392 | GYRO X=   351 Y=   221 Z=  -129
+ACC X=  -364 Y=   876 Z= 17692 | GYRO X=   179 Y=   391 Z=  -121
+ACC X=  -464 Y=  1152 Z= 17944 | GYRO X=   242 Y=   667 Z=    22
+ACC X=  -324 Y=  1276 Z= 18404 | GYRO X=  -166 Y=   452 Z=  -106
+ACC X=  -484 Y=   716 Z= 18580 | GYRO X=   172 Y=   523 Z=   205
+ACC X=  -416 Y=  1312 Z= 17856 | GYRO X=   474 Y=   713 Z=    -9
+ACC X=  -408 Y=  1368 Z= 17820 | GYRO X=   109 Y=   330 Z=  -132
+ACC X=  -464 Y=  1116 Z= 17760 | GYRO X=   310 Y=   198 Z=     7
+ACC X=  -468 Y=  1244 Z= 17444 | GYRO X=  -196 Y=  -125 Z=     8
+ACC X=  -616 Y=  -248 Z= 18288 | GYRO X=  -465 Y=  -626 Z=  -759
+ACC X=    16 Y=   860 Z= 18436 | GYRO X=  -214 Y=  -677 Z=  -412
+ACC X=   320 Y=   776 Z= 18348 | GYRO X=    60 Y=  -913 Z=  -287
+ACC X=   260 Y=   856 Z= 18776 | GYRO X=   -86 Y=   263 Z=    41
+ACC X=   248 Y=  1084 Z= 18152 | GYRO X=    -4 Y=   200 Z=  -148
+ACC X=   368 Y=  1096 Z= 17248 | GYRO X=    47 Y=  -184 Z=  -161
+ACC X=   324 Y=  1140 Z= 17924 | GYRO X=  -164 Y=   253 Z=  -179
+ACC X=   280 Y=  1260 Z= 17972 | GYRO X=   103 Y=   749 Z=  -145
+ACC X=   376 Y=  1120 Z= 17512 | GYRO X=   470 Y=   349 Z=   -50
+ACC X=   280 Y=  1416 Z= 17792 | GYRO X=   485 Y=   225 Z=  -158
+ACC X=   368 Y=  1096 Z= 17868 | GYRO X=  -186 Y=   457 Z=  -132
+ACC X=   280 Y=  1192 Z= 18056 | GYRO X=   278 Y=   618 Z=  -177
+ACC X=   292 Y=  1124 Z= 18072 | GYRO X=   324 Y=   577 Z=  -135
+ACC X=   268 Y=  1280 Z= 18340 | GYRO X=   -80 Y=   457 Z=  -120
+ACC X=   104 Y=  1380 Z= 17564 | GYRO X=   228 Y=   791 Z=   -69
+ACC X=   120 Y=  1168 Z= 17732 | GYRO X=   -21 Y=    67 Z=  -153
+ACC X=   100 Y=  1068 Z= 17696 | GYRO X=   -96 Y=   526 Z=   -22
+ACC X=   -20 Y=  1328 Z= 17892 | GYRO X=    19 Y=   340 Z=  -137
+ACC X=    52 Y=  1092 Z= 18048 | GYRO X=   341 Y=   529 Z=  -164
+ACC X=   -20 Y=  1336 Z= 17628 | GYRO X=   -70 Y=   340 Z=   -43
+ACC X=    60 Y=  1260 Z= 17904 | GYRO X=   -93 Y=   335 Z=  -216
+ACC X=    24 Y=  1244 Z= 18100 | GYRO X=  -234 Y=   427 Z=  -153
+ACC X=   -76 Y=   960 Z= 17536 | GYRO X=   179 Y=   416 Z=   -12
+ACC X=    12 Y=  1104 Z= 17932 | GYRO X=    49 Y=   316 Z=   -12
+ACC X=    -8 Y=  1152 Z= 18332 | GYRO X=   283 Y=   371 Z=  -172
+ACC X=    32 Y=   920 Z= 17792 | GYRO X=    78 Y=   259 Z=   -59
+ACC X=    44 Y=  1172 Z= 17792 | GYRO X=    -3 Y=   443 Z=  -159
+ACC X=    16 Y=  1368 Z= 17840 | GYRO X=   109 Y=   562 Z=  -144
+ACC X=   104 Y=  1232 Z= 17652 | GYRO X=   190 Y=   340 Z=  -216
+ACC X=   -12 Y=  1156 Z= 17912 | GYRO X=   251 Y=   497 Z=  -145
+ACC X=     8 Y=   892 Z= 17988 | GYRO X=   -99 Y=    88 Z=  -190
+ACC X=   -12 Y=  1268 Z= 18148 | GYRO X=  -136 Y=   305 Z=  -208
+ACC X=    96 Y=  1136 Z= 17964 | GYRO X=   301 Y=   603 Z=   -87
+ACC X=    84 Y=  1264 Z= 17820 | GYRO X=    99 Y=   364 Z=   -39
+ACC X=     4 Y=  1220 Z= 17704 | GYRO X=    17 Y=   266 Z=  -226
+ACC X=    16 Y=  1220 Z= 17728 | GYRO X=    99 Y=   380 Z=  -243
+ACC X=    28 Y=  1228 Z= 18444 | GYRO X=   262 Y=   405 Z=  -133
+ACC X=    32 Y=  1148 Z= 18084 | GYRO X=   215 Y=   665 Z=    -5
+ACC X=     8 Y=  1076 Z= 18368 | GYRO X=   -34 Y=   394 Z=  -228
+ACC X=    12 Y=   900 Z= 17612 | GYRO X=  -108 Y=   255 Z=  -294
+ACC X=    28 Y=  1064 Z= 17640 | GYRO X=   416 Y=   610 Z=   -15
+ACC X=   -24 Y=  1176 Z= 17628 | GYRO X=    -9 Y=   290 Z=  -128
+ACC X=    72 Y=   912 Z= 17972 | GYRO X=    97 Y=   463 Z=  -104
+ACC X=   -28 Y=   716 Z= 17664 | GYRO X=  -199 Y=   292 Z=  -182
+ACC X=    -4 Y=  1024 Z= 18008 | GYRO X=   148 Y=   427 Z=  -245
+ACC X=    20 Y=   948 Z= 17988 | GYRO X=    15 Y=   213 Z=  -238
+ACC X=    92 Y=   920 Z= 18176 | GYRO X=   155 Y=   374 Z=  -162
+ACC X=   100 Y=  1096 Z= 17476 | GYRO X=   265 Y=   283 Z=   -67
+ACC X=    40 Y=   820 Z= 18112 | GYRO X=   127 Y=   445 Z=  -115
+ACC X=     4 Y=   840 Z= 17624 | GYRO X=   132 Y=   501 Z=  -202
+ACC X=  -156 Y=  1156 Z= 18288 | GYRO X=  -448 Y=   513 Z=  -170
+ACC X=   152 Y=   860 Z= 18136 | GYRO X=   382 Y=   480 Z=   -55
+ACC X=   -68 Y=   864 Z= 17924 | GYRO X=  -146 Y=   355 Z=  -156
+ACC X=   128 Y=   736 Z= 17344 | GYRO X=   448 Y=   465 Z=   -64
+ACC X=   -24 Y=   880 Z= 17964 | GYRO X=   265 Y=   414 Z=    -3
+ACC X=   -16 Y=   776 Z= 17488 | GYRO X=   416 Y=   665 Z=  -190
+ACC X=   -32 Y=   876 Z= 17484 | GYRO X=   -68 Y=   275 Z=  -201
+ACC X=    24 Y=   900 Z= 17932 | GYRO X=   -68 Y=   324 Z=  -143
+ACC X=   -48 Y=   744 Z= 18012 | GYRO X=  -171 Y=   341 Z=  -234
+ACC X=    28 Y=   928 Z= 18332 | GYRO X=    32 Y=   698 Z=   -38
+ACC X=  -108 Y=   904 Z= 17760 | GYRO X=    28 Y=   359 Z=  -134
+ACC X=   -28 Y=   776 Z= 17916 | GYRO X=    19 Y=   324 Z=  -123
+ACC X=    48 Y=   812 Z= 17788 | GYRO X=   399 Y=   432 Z=  -108
+ACC X=    36 Y=   512 Z= 17856 | GYRO X=   427 Y=   476 Z=  -140
+ACC X=   -40 Y=   800 Z= 17912 | GYRO X=   259 Y=   383 Z=   -51
+ACC X=     0 Y=   644 Z= 17632 | GYRO X=   138 Y=   451 Z=  -103
+ACC X=   -32 Y=   824 Z= 17908 | GYRO X=   -48 Y=   239 Z=   -47
+ACC X=    -4 Y=   680 Z= 17916 | GYRO X=   169 Y=   419 Z=  -187
+ACC X=     4 Y=   200 Z= 17864 | GYRO X=    86 Y=   100 Z=  -231
+ACC X=   -12 Y=   728 Z= 17724 | GYRO X=   -58 Y=   395 Z=  -198
+ACC X=  -100 Y=   808 Z= 17728 | GYRO X=   257 Y=   300 Z=   -71
+ACC X=   -56 Y=   628 Z= 17848 | GYRO X=    65 Y=   334 Z=  -151
+ACC X=     0 Y=   560 Z= 18140 | GYRO X=   326 Y=   613 Z=   -55
+ACC X=   -60 Y=   568 Z= 18112 | GYRO X=   170 Y=   601 Z=  -153
+ACC X=   -68 Y=   676 Z= 17876 | GYRO X=   240 Y=   480 Z=  -182
+ACC X=    12 Y=   732 Z= 17832 | GYRO X=   258 Y=   495 Z=  -114
+ACC X=    24 Y=   828 Z= 17868 | GYRO X=    23 Y=   382 Z=   -94
+ACC X=   -52 Y=   500 Z= 17700 | GYRO X=   107 Y=   250 Z=  -159
+ACC X=   -96 Y=   632 Z= 17752 | GYRO X=     7 Y=   325 Z=   -99
+ACC X=    24 Y=   780 Z= 17728 | GYRO X=    50 Y=   315 Z=  -204
+ACC X=   -28 Y=   848 Z= 18176 | GYRO X=   -10 Y=   323 Z=  -195
+ACC X=  -172 Y=   572 Z= 17632 | GYRO X=  -238 Y=  -270 Z=  -326
+ACC X=  -144 Y=   612 Z= 17900 | GYRO X=  -132 Y=   368 Z=   -83
+ACC X=    56 Y=   484 Z= 17908 | GYRO X=    -3 Y=   316 Z=   -87
+ACC X=   -60 Y=   540 Z= 17856 | GYRO X=   -13 Y=   307 Z=  -205
+ACC X=    36 Y=   576 Z= 17756 | GYRO X=   116 Y=   341 Z=  -181
+ACC X=   -96 Y=   640 Z= 18056 | GYRO X=   178 Y=   456 Z=   -77
+ACC X=    96 Y=   452 Z= 17936 | GYRO X=   326 Y=   520 Z=  -102
+ACC X=   -24 Y=   596 Z= 17936 | GYRO X=    98 Y=   342 Z=  -196
+ACC X=    88 Y=   548 Z= 17920 | GYRO X=   -52 Y=   486 Z=   -48
+ACC X=   -80 Y=   496 Z= 17692 | GYRO X=  -242 Y=   315 Z=  -192
+ACC X=  -120 Y=   252 Z= 18368 | GYRO X=    78 Y=   307 Z=  -209
+ACC X=   -16 Y=    36 Z= 17712 | GYRO X=  -113 Y=   629 Z=  -117
+ACC X=   -84 Y=   468 Z= 17816 | GYRO X=  -134 Y=   511 Z=  -154
+ACC X=    76 Y=   216 Z= 18088 | GYRO X=    83 Y=   444 Z=   -75
+ACC X=    24 Y=   144 Z= 17864 | GYRO X=   131 Y=   320 Z=   -34
+ACC X=  -100 Y=   464 Z= 18160 | GYRO X=    94 Y=   230 Z=   -55
+ACC X=  -100 Y=   260 Z= 17536 | GYRO X=   518 Y=   480 Z=    13
+ACC X=    28 Y=   160 Z= 17996 | GYRO X=   -76 Y=   536 Z=   -29
+ACC X=    16 Y=   416 Z= 17768 | GYRO X=    35 Y=   342 Z=  -194
+ACC X=    -4 Y=   580 Z= 18012 | GYRO X=   113 Y=   365 Z=   -59
+ACC X=   -92 Y=   748 Z= 17980 | GYRO X=   257 Y=   392 Z=    -5
+ACC X=    76 Y=   264 Z= 17772 | GYRO X=   -57 Y=   180 Z=   -90
+ACC X=   -60 Y=   456 Z= 17780 | GYRO X=  -176 Y=   297 Z=  -100
+ACC X=   372 Y=   628 Z= 17684 | GYRO X=    86 Y=  1309 Z=   129
+ACC X=  -156 Y=   328 Z= 18324 | GYRO X=  -152 Y=   226 Z=  -319
+ACC X=   -32 Y=   412 Z= 18116 | GYRO X=   -62 Y=   608 Z=  -117
+ACC X=  -196 Y=   204 Z= 17876 | GYRO X=   493 Y=  1146 Z=  -300
+ACC X=  -244 Y=   156 Z= 17932 | GYRO X=  -194 Y=   344 Z=  -126
+ACC X=  -148 Y=   284 Z= 18064 | GYRO X=  -131 Y=   422 Z=  -181
+ACC X=  -236 Y=  -128 Z= 17724 | GYRO X=   154 Y=   417 Z=  -176
+ACC X=  -288 Y=   -80 Z= 18044 | GYRO X=   209 Y=   322 Z=  -182
+ACC X=  -284 Y=   196 Z= 17916 | GYRO X=   152 Y=   330 Z=  -160
+ACC X=  -248 Y=    76 Z= 17628 | GYRO X=  1145 Y=   952 Z=  -329
+ACC X=  -380 Y=  2096 Z= 18056 | GYRO X=  3182 Y= -1394 Z=  1061
+ACC X= -5396 Y= 13488 Z= 32767 | GYRO X= 32767 Y= 24073 Z=  3958
+ACC X= -7488 Y= -5216 Z=-14960 | GYRO X=-31177 Y= -3508 Z= -9284
+ACC X= -3444 Y=  1136 Z=  9192 | GYRO X=-22522 Y=-13337 Z=  2621
+ACC X= -2032 Y=  5672 Z= 14568 | GYRO X= -8333 Y= -7459 Z= -1010
+ACC X= -1984 Y=  4520 Z= 21256 | GYRO X= -4308 Y=  -162 Z=   -22
+ACC X= -1316 Y=  2876 Z= 19460 | GYRO X= -7928 Y= -3565 Z=   -85
+ACC X=-11932 Y= 17784 Z=-12368 | GYRO X= 32767 Y= 32767 Z= 14744
+ACC X= -7416 Y=  9484 Z= -1312 | GYRO X=-15801 Y= -2733 Z=  3476
+ACC X= -6404 Y= 18376 Z=  7024 | GYRO X=-32768 Y=-20225 Z= -5000
+ACC X= -4968 Y= 15864 Z= -2308 | GYRO X=-17918 Y= -8263 Z=   281
+ACC X= -2568 Y=  3564 Z= 13048 | GYRO X=-10197 Y= -3731 Z= -2264
+ACC X= -3996 Y=  5172 Z= 20996 | GYRO X=-22796 Y=-13376 Z= -1269
+ACC X= -6112 Y= 15080 Z= 21648 | GYRO X= 32767 Y= 22419 Z=-12475
+ACC X= -5724 Y= 11588 Z=  4208 | GYRO X=-11835 Y=  5279 Z=  1302
+ACC X= -2168 Y= 11232 Z= 15680 | GYRO X= -7401 Y=  1273 Z= -4974
+ACC X= -3384 Y=  4500 Z=  9804 | GYRO X=  2462 Y=  6779 Z= -2608
+ACC X= -3740 Y=  2240 Z=  8580 | GYRO X= -1785 Y=  6642 Z= -4902
+ACC X= -4424 Y=  5000 Z= 16056 | GYRO X= -7169 Y= -2590 Z= -2552
+ACC X= -3960 Y=   848 Z= 20200 | GYRO X= -8845 Y= -6746 Z= -1349
+ACC X= -3248 Y=  3776 Z=  5892 | GYRO X= 14949 Y= 15712 Z=  1404
+ACC X=-15324 Y=  8704 Z= 32767 | GYRO X= -6709 Y=-32768 Z=  3231
+ACC X= -8412 Y=  6228 Z=   784 | GYRO X= -2215 Y=  5045 Z=  2540
+ACC X= -6400 Y= 13112 Z= -2440 | GYRO X=-15366 Y= -7922 Z=   781
+ACC X= -6140 Y= 10948 Z= 13800 | GYRO X=-18856 Y=-17125 Z= -5684
+ACC X= -5684 Y=  3684 Z= 21360 | GYRO X= -8556 Y= -5371 Z= -2985
+ACC X= -6064 Y=  2000 Z= 24140 | GYRO X=   398 Y=  1341 Z=   195
+ACC X= -4988 Y=  3488 Z= 14416 | GYRO X=  4604 Y=  5175 Z=  1221
+ACC X= -4872 Y=  3880 Z= 14936 | GYRO X=  -335 Y=  -924 Z=  -142
+ACC X= -5048 Y=  3736 Z= 17280 | GYRO X= -2423 Y= -1460 Z=  -610
+ACC X= -4500 Y=  2376 Z= 16728 | GYRO X= -1012 Y=  -305 Z=  -374
+ACC X= -4408 Y=  2448 Z= 17668 | GYRO X=   281 Y=   593 Z=  -604
+ACC X= -4608 Y=  2544 Z= 16600 | GYRO X=   785 Y=   844 Z=  -160
+ACC X= -5784 Y=  7296 Z= 12776 | GYRO X=  -997 Y=  -831 Z=   459
+ACC X=-26708 Y= 10264 Z= 32767 | GYRO X=-22627 Y=-32551 Z=-15949
+ACC X= -9836 Y= -4596 Z= 32220 | GYRO X=-15871 Y=-12384 Z=  3592
+ACC X= -5648 Y=  2916 Z=  5344 | GYRO X=  6052 Y=   673 Z=  3855
+ACC X= -6224 Y=  7636 Z=  5200 | GYRO X=  5550 Y=  8790 Z=     1
+ACC X= -6436 Y=  6752 Z=  8812 | GYRO X= -3433 Y= -3845 Z= -2709
+ACC X= -6612 Y=  4124 Z= 14652 | GYRO X= -4625 Y= -3926 Z= -2329
+ACC X= -6328 Y=  2436 Z= 16884 | GYRO X= -4540 Y= -4041 Z= -1858
+ACC X= -6492 Y=  8048 Z=-27008 | GYRO X= 19338 Y= 18089 Z=  -747
+ACC X=-11132 Y=  -184 Z=-32768 | GYRO X=-22636 Y=-32768 Z=-11105
+ACC X=-12068 Y=  7400 Z= 16516 | GYRO X=-20692 Y=-28849 Z= -9096
+ACC X=-11068 Y= -1884 Z= 29168 | GYRO X=-22105 Y=-30427 Z= -8599
+ACC X= -6920 Y= -1268 Z= 32767 | GYRO X=  2545 Y=  3884 Z=  2328
+ACC X= -5952 Y=  3944 Z=  8616 | GYRO X=  2290 Y=  3193 Z=  -144
+ACC X= -6184 Y=  6972 Z=  9948 | GYRO X= -8367 Y=-14648 Z= -2155
+ACC X= -5548 Y=  -980 Z= 26652 | GYRO X=-11028 Y=-17555 Z= -5043
+ACC X=-32768 Y= 32767 Z= 32767 | GYRO X= 32767 Y= 32767 Z=  8873
+ACC X=-18172 Y= 19176 Z= 18644 | GYRO X= 22665 Y= 32767 Z= 14406
+ACC X=-10540 Y= 21248 Z=-21196 | GYRO X=-20948 Y=-30558 Z= -7194
+ACC X=-10564 Y= -1308 Z= 20320 | GYRO X=-12750 Y=-20199 Z= -9209
+ACC X= -9004 Y=    52 Z= 32767 | GYRO X=  -465 Y=  2948 Z=  1080
+ACC X= -7480 Y=  3668 Z= 13728 | GYRO X=  6955 Y=  9002 Z=  3101
+ACC X= -5844 Y= 18696 Z=-32768 | GYRO X= -4026 Y=-10127 Z=  2059
+ACC X=-20460 Y=  5988 Z=-14116 | GYRO X=-32768 Y=-32768 Z=-27848
+ACC X=-10948 Y= -7440 Z=  9080 | GYRO X= -9120 Y=-14852 Z= -5267
+ACC X=-11396 Y= -9748 Z= 27220 | GYRO X= -6218 Y=  -469 Z=  2854
+ACC X= -8888 Y=  7108 Z= -1972 | GYRO X=  -386 Y=-11153 Z=  -950
+ACC X= -7460 Y=  7780 Z=  8648 | GYRO X=-17495 Y=-26518 Z= -7648
+ACC X=-10192 Y= 15268 Z=-18288 | GYRO X=  6627 Y= 32767 Z=  6924
+ACC X=-17056 Y=  3372 Z= -2600 | GYRO X=-25370 Y=-32768 Z=-15835
+ACC X= -9120 Y= -2552 Z= 30200 | GYRO X=  9038 Y= 12827 Z=  6061
+ACC X= -7756 Y=  6228 Z= 13964 | GYRO X=  1949 Y=  3197 Z=  4257
+ACC X= -8840 Y=  5972 Z= 12228 | GYRO X=  1815 Y=  6564 Z=    92
+ACC X= -9236 Y=  5472 Z= 12648 | GYRO X=  3538 Y=   961 Z= -4035
+ACC X=-10256 Y=  3584 Z= 12644 | GYRO X=   573 Y=  9572 Z= -3286
+ACC X=-10124 Y=  4448 Z= 10684 | GYRO X= -8797 Y= 19242 Z= -2594
+ACC X=-22452 Y=  1300 Z=  4228 | GYRO X=  1220 Y= 32767 Z= -3528
+ACC X=-19748 Y=  3612 Z=  7116 | GYRO X=  -685 Y= -6152 Z= -6630
+ACC X=-16532 Y=   428 Z=  -652 | GYRO X=   619 Y=-22863 Z= 11637
+ACC X=-12204 Y=   512 Z= -1012 | GYRO X=   866 Y=  8359 Z=  2353
+ACC X=-17732 Y=  2120 Z=  2320 | GYRO X=  -337 Y= 19756 Z= -6543
+ACC X=-17812 Y=  2456 Z=  3592 | GYRO X=   -68 Y= -3738 Z=  1162
+ACC X=-15380 Y=  1248 Z=  -220 | GYRO X=  -495 Y=-11679 Z=  1418
+ACC X=-14288 Y=  1440 Z=  -520 | GYRO X=   -67 Y=  5926 Z=  -836
+ACC X=-16620 Y=  1904 Z=  1900 | GYRO X=  -184 Y=  9471 Z= -2523
+ACC X=-16688 Y=  1704 Z=  1664 | GYRO X=   140 Y= -4499 Z=  1199
+ACC X=-15068 Y=  1652 Z=  -296 | GYRO X=  -102 Y= -3947 Z=   577
+ACC X=-15396 Y=  1340 Z=   268 | GYRO X=   126 Y=  5271 Z=  -910
+ACC X=-16352 Y=  2004 Z=  1388 | GYRO X=  -157 Y=  3256 Z=  -728
+ACC X=-15812 Y=  1432 Z=   748 | GYRO X=    29 Y= -3236 Z=   104
+ACC X=-15184 Y=  1492 Z=  -156 | GYRO X=    66 Y=    -5 Z=   267
+ACC X=-15780 Y=  1440 Z=   596 | GYRO X=   -11 Y=  3450 Z=  -947
+ACC X=-16040 Y=  1680 Z=   912 | GYRO X=    95 Y=   192 Z=   105
+ACC X=-15696 Y=  1532 Z=    28 | GYRO X=    83 Y= -1299 Z=   -30
+ACC X=-15564 Y=  1436 Z=    88 | GYRO X=   112 Y=  1380 Z=  -138
+ACC X=-15884 Y=  1564 Z=   520 | GYRO X=    33 Y=  1554 Z=  -441
+ACC X=-15804 Y=  1440 Z=   372 | GYRO X=    37 Y=  -377 Z=     5
+ACC X=-15596 Y=  1396 Z=     0 | GYRO X=    23 Y=   206 Z=  -215
+ACC X=-15664 Y=  1212 Z=    80 | GYRO X= -1783 Y=  2349 Z= -1353
+ACC X=-15832 Y=  1184 Z=    16 | GYRO X=   -66 Y=  1804 Z=   205
+ACC X=-15448 Y=  1336 Z=  1040 | GYRO X=  3878 Y= -1515 Z=  1324
+ACC X=-14176 Y=  1396 Z=   436 | GYRO X=  7552 Y= -1380 Z=  1670
+ACC X=-15916 Y=   992 Z=  -772 | GYRO X= -1657 Y=  2436 Z=   832
+ACC X=-15480 Y=  2028 Z=  -452 | GYRO X=  1532 Y=   540 Z= -1500
+ACC X=-16164 Y=  1000 Z=  -816 | GYRO X=   490 Y= -1033 Z=   813
+ACC X=-15300 Y=  1728 Z=  -660 | GYRO X=   391 Y=   733 Z=   475
+ACC X=-15884 Y=  1212 Z=  -556 | GYRO X=  -792 Y=  1660 Z= -1125
+ACC X=-15836 Y=  1676 Z=  -672 | GYRO X=  -202 Y=   155 Z=   610
+ACC X=-15580 Y=  1248 Z=  -696 | GYRO X=    -6 Y=   -74 Z=  -919
+ACC X=-14892 Y=  1076 Z=   440 | GYRO X=  1043 Y=  -368 Z=   814
+ACC X=-15536 Y=  1512 Z=  -220 | GYRO X=   563 Y=   512 Z=  -716
+ACC X=-15884 Y=  1024 Z=  -640 | GYRO X=   213 Y=   373 Z=     9
+ACC X=-15508 Y=  1668 Z=  -808 | GYRO X=   699 Y=    66 Z=   254
+ACC X=-15744 Y=   880 Z=  -792 | GYRO X=  -111 Y=   911 Z=  -535
+ACC X=-15600 Y=  1760 Z=  -900 | GYRO X=    25 Y=   591 Z=   -49
+ACC X=-15696 Y=   924 Z=  -772 | GYRO X=    -6 Y=   278 Z=  -287
+ACC X=-15600 Y=  1524 Z=  -748 | GYRO X=   286 Y=   274 Z=   -10

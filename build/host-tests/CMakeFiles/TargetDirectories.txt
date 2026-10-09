@@ -1,0 +1,9 @@
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/imu_calibration_tests.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/imu_driver_tests.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/imu_text_tests.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/attitude_tests.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/orientation_system_tests.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/network_config_tests.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/RUN_TESTS.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/ALL_BUILD.dir
+C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/CMakeFiles/ZERO_CHECK.dir

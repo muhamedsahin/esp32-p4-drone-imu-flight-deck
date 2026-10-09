@@ -1,0 +1,670 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/main/libmain.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"idf_component_register",
+			"set_property",
+			"__component_set_dependencies",
+			"__component_set_all_dependencies",
+			"add_compile_options",
+			"add_cxx_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"__component_add_include_dirs"
+		],
+		"files" : 
+		[
+			"C:/esp/v6.1/esp-idf/tools/cmake/component.cmake",
+			"main/CMakeLists.txt",
+			"C:/esp/v6.1/esp-idf/tools/cmake/utilities.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 494,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 527,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 362,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 347,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 347,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 479,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 482,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 480,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 478,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 496,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 323,
+				"parent" : 12
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "@\"C:/Users/muham/Desktop/Drone/smal/mpu6050/build/toolchain/cxxflags\" -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-shrink-wrap"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmacro-prefix-map=C:/Users/muham/Desktop/Drone/smal/mpu6050=."
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmacro-prefix-map=C:/esp/v6.1/esp-idf=/IDF"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-std=gnu++26"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fuse-cxa-atexit"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "IDF_VER=\"v6.1\""
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "_GLIBCXX_HAVE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "_GLIBCXX_USE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/config"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/main"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_libc/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/ldo/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/debug_probe/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/etm/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/power_supply/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/modem/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/private_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32p4/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/heap/tlsf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4/register/hw_ver1"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/include/riscv"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_stdio/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpio/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpio/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_usb/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_usb/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_pmu/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_pmu/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_uart/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_dma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_dma/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/sys"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/orientation/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/imu/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_i2c/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_i2c/esp32p4/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_i2c/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/attitude/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/drone_web/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_http_server/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/http_parser"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_event/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_driver_spi::@a108b58494cdd93e678c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_esp_driver_i2c::@823c83e66a2d740aac64"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_hal_twai::@51ba563199ada2b3f0ba"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_driver::@76403182dd99a02c203e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_hal_sd::@1ada79c52e603a3e38c7"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_sdmmc::@89ed5bca1750ffbc7db6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_driver_sd_intf::@9cb2f063b9dd7d282253"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_driver_sdmmc::@6ccb6c8602dfb90db4d7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "__idf_riscv::@5eeb1a2ca709d020776e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_imu::@10eef089b95aaa63e19e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_orientation::@e81b47400b5ec7b03557"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_attitude::@bf4411f5cdbf6582f0a9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_hosted::@cd1478f59ad33d94018c"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_drone_web::@647b7a20940964ffce7b"
+		}
+	],
+	"id" : "__idf_main::@7368607ed66887415643",
+	"name" : "__idf_main",
+	"nameOnDisk" : "libmain.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/main",
+		"source" : "main"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "main/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

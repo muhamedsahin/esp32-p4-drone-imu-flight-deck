@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\orientation_system_tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\fakes\fake_esp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\orientation\orientation_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\orientation\imu_application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\attitude\attitude_estimator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\attitude\quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_calibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_text_calibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration_record.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_text_store.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2255A073-F787-3FB0-9A21-883EEF13AC0E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

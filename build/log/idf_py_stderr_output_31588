@@ -1,0 +1,14 @@
+Command: C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM17 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 0 --decode-panic backtrace C:\Users\muham\Desktop\Drone\smal\mpu6050\build\mpu6050.elf C:\Users\muham\Desktop\Drone\smal\mpu6050\build\bootloader\bootloader.elf --force-color -m 'C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM17'
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- NOTE: Using \\.\COM17 instead...
+--- esp-idf-monitor 1.10.0 on \\.\COM17 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x4ff28ed0: esp_bootloader_get_description at C:/esp/v6.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:40
+--- 0x4ff2bbd0: is_xmc_chip_strict at C:/esp/v6.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:911
+--- 0x4ff28eda: call_start_cpu0 at C:/esp/v6.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+[1;31m--- ERROR:[0m GetOverlappedResult failed (PermissionError(13, 'Erişim engellendi.', None, 5))
+--- Waiting for the device to reconnect................................................................................................................................................................................................................................................................................................................................................................
+--- 0x4ff28ed0: esp_bootloader_get_description at C:/esp/v6.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:40
+--- 0x4ff2bbd0: is_xmc_chip_strict at C:/esp/v6.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:911
+--- 0x4ff28eda: call_start_cpu0 at C:/esp/v6.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+

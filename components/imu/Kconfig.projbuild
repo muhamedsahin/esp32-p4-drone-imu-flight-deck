@@ -1,0 +1,26 @@
+menu "MPU6050 calibration"
+
+    config MPU6050_RECOVER_LAST_LOG
+        bool "Recover this board's six measurements from the October 8 log"
+        default n
+        help
+            One-board repair option. Imports the six real training means only
+            when no pending or completed calibration exists. Three new tilted
+            validations are still mandatory. Disable when using another module.
+
+    config MPU6050_FORCE_ACCEL_CALIBRATION
+        bool "Run six-face accelerometer calibration even when a saved record exists"
+        default n
+        help
+            Enable to recalibrate this sensor. Disable after successful calibration;
+            otherwise the six-face procedure runs on every reboot.
+
+    config MPU6050_CALIBRATION_WARMUP_MS
+        int "Minimum sensor warm-up time before calibration (milliseconds)"
+        range 0 300000
+        default 20000
+        help
+            This is only a minimum warm-up delay. Temperature stability and motion
+            are checked separately; no temperature compensation model is assumed.
+
+endmenu

@@ -1,0 +1,14 @@
+C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\orientation_system_tests.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\orientation_system_tests.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\fakes\fake_esp.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\fake_esp.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\orientation\orientation_system.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\orientation_system.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\orientation\imu_application.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\imu_application.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\attitude\attitude_estimator.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\attitude_estimator.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\attitude\quaternion.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\quaternion.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\mpu6050.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\mpu6050_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_storage.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\mpu6050_storage.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_text_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\mpu6050_text_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\imu_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration_record.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\imu_calibration_record.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration_text.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\imu_calibration_text.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_text_store.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\orientation_system_tests.dir\Debug\imu_text_store.obj

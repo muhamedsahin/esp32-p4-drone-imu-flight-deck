@@ -1,0 +1,882 @@
+Start testing: Oct 09 00:13 Türkiye Standart Saati
+----------------------------------------------------------
+1/6 Testing: calibration_math_and_record
+1/6 Test: calibration_math_and_record
+Command: "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/Debug/imu_calibration_tests.exe"
+Directory: C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests
+"calibration_math_and_record" start time: Oct 09 00:13 Türkiye Standart Saati
+Output:
+----------------------------------------------------------
+52 calibration checks passed
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"calibration_math_and_record" end time: Oct 09 00:13 Türkiye Standart Saati
+"calibration_math_and_record" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/6 Testing: calibration_driver_and_workflow
+2/6 Test: calibration_driver_and_workflow
+Command: "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/Debug/imu_driver_tests.exe"
+Directory: C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests
+"calibration_driver_and_workflow" start time: Oct 09 00:13 Türkiye Standart Saati
+Output:
+----------------------------------------------------------
+74 driver/workflow checks passed
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"calibration_driver_and_workflow" end time: Oct 09 00:13 Türkiye Standart Saati
+"calibration_driver_and_workflow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: calibration_text_and_partial_resume
+3/6 Test: calibration_text_and_partial_resume
+Command: "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/Debug/imu_text_tests.exe"
+Directory: C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests
+"calibration_text_and_partial_resume" start time: Oct 09 00:13 Türkiye Standart Saati
+Output:
+----------------------------------------------------------
+37 text/file/workflow checks passed
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"calibration_text_and_partial_resume" end time: Oct 09 00:13 Türkiye Standart Saati
+"calibration_text_and_partial_resume" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: attitude_accelerometer_foundation
+4/6 Test: attitude_accelerometer_foundation
+Command: "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/Debug/attitude_tests.exe"
+Directory: C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests
+"attitude_accelerometer_foundation" start time: Oct 09 00:13 Türkiye Standart Saati
+Output:
+----------------------------------------------------------
+2347 attitude and quaternion fusion checks passed
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"attitude_accelerometer_foundation" end time: Oct 09 00:13 Türkiye Standart Saati
+"attitude_accelerometer_foundation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: orientation_api_and_sensor_workflow
+5/6 Test: orientation_api_and_sensor_workflow
+Command: "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/Debug/orientation_system_tests.exe"
+Directory: C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests
+"orientation_api_and_sensor_workflow" start time: Oct 09 00:13 Türkiye Standart Saati
+Output:
+----------------------------------------------------------
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = null
+negative_x = null
+positive_y = null
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = null
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = null
+positive_y = null
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = null
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = 4.3053131871806372e-06, 4.3053131871806372e-06
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = 1.6068539222297489e-05, 2.6267952608849399e-05
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = 4.3053131871806372e-06, 4.3053131871806372e-06
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = 1.6068539222297489e-05, 2.6267952608849399e-05
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = 4.3053131871806372e-06, 4.3053131871806372e-06
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_END
+
+CALIBRATION_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = 1.6068539222297489e-05, 2.6267952608849399e-05
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = 4.3053131871806372e-06, 4.3053131871806372e-06
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = null
+negative_x = null
+positive_y = null
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = null
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = null
+positive_y = null
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = null
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = null
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = null
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = null
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = null
+y = null
+z = null
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = null
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = null
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = null
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = null
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = 4.3053131871806372e-06, 4.3053131871806372e-06
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_UPDATE_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = 1.6068539222297489e-05, 2.6267952608849399e-05
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = 4.3053131871806372e-06, 4.3053131871806372e-06
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_UPDATE_END
+
+CALIBRATION_BEGIN
+# x/y/z: bias[count], hassasiyet[count/g]. null = eksik.
+# positive/negative: ham X,Y,Z [count]. gyro: bias[count].
+# accel_quality: RMS,max [g]. validation: iki pencere hatasi [g].
+# Sicaklik [C], gyro_noise/gyro_error [dps].
+format = 1
+sensor = 104
+x = 120, 16400
+y = -80, 16300
+z = 200, 16500
+positive_x = 16520, -80, 200
+negative_x = -16280, -80, 200
+positive_y = 120, 16220, 200
+negative_y = 120, -16380, 200
+positive_z = 120, -80, 16700
+negative_z = 120, -80, -16300
+accel_temperature = 30.059411764705885
+accel_quality = 1.6068539222297489e-05, 2.6267952608849399e-05
+validation_xy = 2.6267952608849399e-05, 2.6267952608849399e-05
+validation_xz = 8.1272875127602617e-06, 8.1272875127602617e-06
+validation_yz = 4.3053131871806372e-06, 4.3053131871806372e-06
+gyro_x = 120
+gyro_y = -30
+gyro_z = 10
+gyro_temperature = 30.059411764705885
+gyro_noise = 0, 0, 0
+gyro_error = 0
+CALIBRATION_END
+28 orientation API checks passed
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"orientation_api_and_sensor_workflow" end time: Oct 09 00:13 Türkiye Standart Saati
+"orientation_api_and_sensor_workflow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: drone_web_wifi_configuration
+6/6 Test: drone_web_wifi_configuration
+Command: "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests/Debug/network_config_tests.exe"
+Directory: C:/Users/muham/Desktop/Drone/smal/mpu6050/build/host-tests
+"drone_web_wifi_configuration" start time: Oct 09 00:13 Türkiye Standart Saati
+Output:
+----------------------------------------------------------
+PASS: 25 Wi-Fi configuration checks
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"drone_web_wifi_configuration" end time: Oct 09 00:13 Türkiye Standart Saati
+"drone_web_wifi_configuration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 09 00:13 Türkiye Standart Saati

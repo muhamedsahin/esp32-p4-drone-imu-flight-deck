@@ -1,0 +1,163 @@
+Command: C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM17 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 0 --decode-panic backtrace C:\Users\muham\Desktop\Drone\smal\mpu6050\build\mpu6050.elf C:\Users\muham\Desktop\Drone\smal\mpu6050\build\bootloader\bootloader.elf --force-color -m 'C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM17'
+�ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x10f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:2
+load:0x4ff33ce0,len:0x1524
+load:0x4ff28ed0,len:0xf58
+load:0x4ff2bbd0,len:0x35a4
+entry 0x4ff28eda
+[0;32mI (27) boot: ESP-IDF v6.1.0 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Oct  8 2026 13:47:47[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.3[0m
+[0;32mI (31) boot: efuse block revision: v0.3[0m
+[0;32mI (34) boot.esp32p4: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32p4: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=40030020 size=0c9ach ( 51628) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001c9d4 vaddr=30100000 size=000b4h (   180) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0001ca90 vaddr=4ff00000 size=03588h ( 13704) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=40000020 size=23d88h (146824) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00043db0 vaddr=4ff03588 size=0a8c4h ( 43204) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0004e67c vaddr=4ff0de80 size=02c04h ( 11268) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Multicore app[0m
+[0;32mI (186) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     mpu6050[0m
+[0;32mI (196) app_init: App version:      1[0m
+[0;32mI (200) app_init: Compile time:     Oct  8 2026 13:48:09[0m
+[0;32mI (205) app_init: ELF file SHA256:  e5ff22aa5...[0m
+[0;32mI (209) app_init: ESP-IDF:          v6.1.0[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (231) heap_init: At 4FF123E0 len 00028BE0 (162 KiB): RETENT_RAM[0m
+[0;32mI (236) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (242) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (247) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (252) heap_init: At 301000B4 len 00001F4C (7 KiB): SPM[0m
+[0;32mI (259) spi_flash: detected chip: gd[0m
+[0;32mI (261) spi_flash: flash io: dio[0m
+[0;33mW (264) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (276) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (282) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (291) sleep_clock: System sleep clock ICG setting initialization[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) main_task: Returned from app_main()[0m
+[0;32mI (545) MPU_IMU: Algilandi: MPU6500, WHO_AM_I=0x70, I2C adres=0x68[0m
+[0;32mI (645) MPU_IMU: MPU6500 hazir: SDA=7 SCL=8, I2C=100 kHz, 100 Hz, ACC +/-2g, GYRO +/-250 dps[0m
+[0;32mI (645) IMU_APP: Kalibrasyon sensoru: MPU6500 (WHO_AM_I=0x70).[0m
+[0;32mI (645) IMU_CAL: Sensor isinmasi bekleniyor (acilistan itibaren 20000 ms).[0m
+[0;32mI (20555) IMU_CAL: GYRO: sensoru sabit bir destek uzerine koyun. Motorlar kapali olsun.[0m
+[0;32mI (22545) IMU_CAL: Sabit durus bulundu. Olcum ve dogrulama bitene kadar dokunmayin.[0m
+[0;32mI (48545) IMU_CAL: GYRO bias [count]: 138.1820 384.1740 -112.7150; T=29.79 C[0m
+[0;32mI (48545) IMU_CAL: GYRO gurultu [dps std]: 0.0906 0.1132 0.0408; dogrulama max=0.01161 dps[0m
+[0;32mI (48555) IMU_CAL: ACC: +X -X +Y -Y +Z -Z. Her yonu yukari cevirip sabit destek kullanin.[0m
+[0;32mI (48555) IMU_CAL: Yeni yontem: toplam ivme 1g fit. Tam 90 derece gerekmez; sonra 3 egik kontrol var.[0m
+[0;32mI (48565) IMU_CAL: Elinizde tutmayin. Yanlis yon/hareket kabul edilmez; her yon icin 120 s var.[0m
+[0;32mI (48575) IMU_CAL: [1/6] +X yonunu YUKARI cevirin. OLCUM ALINDI mesajini bekleyin.[0m
+[0;33mW (50575) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (54575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (58575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (62575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (66575) IMU_CAL: Sabit durus bulundu. Olcum ve dogrulama bitene kadar dokunmayin.[0m
+[0;32mI (78575) IMU_CAL: +X OLCUM ALINDI (model henuz dogrulanmadi). Ortalama [count]: 16941.227 -362.780 1644.037[0m
+[0;32mI (78575) IMU_CAL: [2/6] -X yonunu YUKARI cevirin. OLCUM ALINDI mesajini bekleyin.[0m
+[0;33mW (80575) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (84575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (88575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (92575) IMU_CAL: Sabit durus bulundu. Olcum ve dogrulama bitene kadar dokunmayin.[0m
+[0;32mI (104575) IMU_CAL: -X OLCUM ALINDI (model henuz dogrulanmadi). Ortalama [count]: -15861.007 14.893 890.490[0m
+[0;32mI (104575) IMU_CAL: [3/6] +Y yonunu YUKARI cevirin. OLCUM ALINDI mesajini bekleyin.[0m
+[0;33mW (106575) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (110575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (114575) IMU_CAL: Sabit durus bulundu. Olcum ve dogrulama bitene kadar dokunmayin.[0m
+[0;32mI (126575) IMU_CAL: +Y OLCUM ALINDI (model henuz dogrulanmadi). Ortalama [count]: 1120.833 16540.793 1089.650[0m
+[0;32mI (126575) IMU_CAL: [4/6] -Y yonunu YUKARI cevirin. OLCUM ALINDI mesajini bekleyin.[0m
+[0;33mW (128575) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (132575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (136575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (140575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (144575) IMU_CAL: Sabit durus bulundu. Olcum ve dogrulama bitene kadar dokunmayin.[0m
+[0;32mI (156575) IMU_CAL: -Y OLCUM ALINDI (model henuz dogrulanmadi). Ortalama [count]: 1065.853 -16314.590 1263.763[0m
+[0;32mI (156575) IMU_CAL: [5/6] +Z yonunu YUKARI cevirin. OLCUM ALINDI mesajini bekleyin.[0m
+[0;33mW (158575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (162575) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (166575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (170575) IMU_CAL: Sabit durus bulundu. Olcum ve dogrulama bitene kadar dokunmayin.[0m
+[0;32mI (182575) IMU_CAL: +Z OLCUM ALINDI (model henuz dogrulanmadi). Ortalama [count]: 1092.520 312.090 17865.620[0m
+[0;32mI (182575) IMU_CAL: [6/6] -Z yonunu YUKARI cevirin. OLCUM ALINDI mesajini bekleyin.[0m
+[0;33mW (184575) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (188575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (192575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (196575) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (200575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (204575) IMU_CAL: Pencere reddedildi: sicaklik kararsiz. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (208575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (212575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (216575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (220575) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (222575) IMU_CAL: Sabit durus bulundu. Olcum ve dogrulama bitene kadar dokunmayin.[0m
+[0;32mI (234575) IMU_CAL: -Z OLCUM ALINDI (model henuz dogrulanmadi). Ortalama [count]: 1143.380 -408.943 -15599.613[0m
+[0;32mI (234575) IMU_CAL: [D1/3] XY EGIK KONTROL: bu iki ekseni yaklasik 45 derece egip sabit destekleyin.[0m
+[0;32mI (234575) IMU_CAL: Kesin aci gerekmez. Iki hedef eksen de 0.30g'den buyuk, digeri 0.30g'den kucuk olsun.[0m
+[0;33mW (236585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (236585) IMU_CAL: Yon yardimi ham[g]: X=+0.070 Y=-0.024 Z=-0.953[0m
+[0;33mW (240585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (240585) IMU_CAL: Yon yardimi ham[g]: X=+0.070 Y=-0.025 Z=-0.952[0m
+[0;33mW (244585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (244585) IMU_CAL: Yon yardimi ham[g]: X=+0.070 Y=-0.025 Z=-0.952[0m
+[0;33mW (248585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (248585) IMU_CAL: Yon yardimi ham[g]: X=+0.070 Y=-0.025 Z=-0.952[0m
+[0;33mW (252585) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (256585) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (260585) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (264585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (268585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (272585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (276585) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (280585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (284585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (284585) IMU_CAL: Yon yardimi ham[g]: X=+0.697 Y=+0.056 Z=+0.832[0m
+[0;33mW (288585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (288585) IMU_CAL: Yon yardimi ham[g]: X=+0.695 Y=+0.059 Z=+0.833[0m
+[0;33mW (292585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (292585) IMU_CAL: Yon yardimi ham[g]: X=+0.694 Y=+0.060 Z=+0.834[0m
+[0;33mW (296585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (296585) IMU_CAL: Yon yardimi ham[g]: X=+0.694 Y=+0.062 Z=+0.835[0m
+[0;33mW (300585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (300585) IMU_CAL: Yon yardimi ham[g]: X=+0.693 Y=+0.062 Z=+0.835[0m
+[0;33mW (304585) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (308585) IMU_CAL: Pencere reddedildi: sensor olcum araligi asildi. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (312585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (312585) IMU_CAL: Yon yardimi ham[g]: X=-0.665 Y=-0.294 Z=+0.731[0m
+[0;33mW (316585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (316585) IMU_CAL: Yon yardimi ham[g]: X=-0.664 Y=-0.295 Z=+0.733[0m
+[0;33mW (320585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (324585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (328585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (332585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (336585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (336585) IMU_CAL: Yon yardimi ham[g]: X=+0.061 Y=+0.056 Z=+1.089[0m
+[0;33mW (340585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (340585) IMU_CAL: Yon yardimi ham[g]: X=+0.061 Y=+0.056 Z=+1.089[0m
+[0;33mW (344585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (348585) IMU_CAL: Pencere reddedildi: hareket, titresim veya drift. Pozisyonu duzeltin, sabit tutun.[0m
+[0;33mW (352585) IMU_CAL: Pencere reddedildi: istenen eksen yukari bakmiyor. Pozisyonu duzeltin, sabit tutun.[0m
+[0;32mI (352585) IMU_CAL: Yon yardimi ham[g]: X=+0.068 Y=+0.012 Z=+1.090[0m
+[1;31mE (354595) IMU_CAL: Pozisyon icin sure doldu. Son ret nedeni: istenen eksen yukari bakmiyor[0m
+[1;31mE (354595) IMU_APP: Kalibrasyon durdu: sure asimi / yeni veri gelmedi[0m

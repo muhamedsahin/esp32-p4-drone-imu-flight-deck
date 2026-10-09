@@ -1,0 +1,51 @@
+Command: ninja all
+[1/38] Building C object esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj
+[2/38] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_main.c.obj
+[3/38] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.obj
+[4/38] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_txrx.c.obj
+[5/38] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_uri.c.obj
+[6/38] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_ws.c.obj
+[7/38] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.obj
+[8/38] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/esp_http_client.c.obj
+[9/38] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.obj
+[10/38] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.obj
+[11/38] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.obj
+[12/38] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_sess.c.obj
+[13/38] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport.c.obj
+[14/38] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_socks_proxy.c.obj
+[15/38] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_internal.c.obj
+[16/38] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ssl.c.obj
+[17/38] Building C object esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_common.c.obj
+[18/38] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ws.c.obj
+[19/38] Linking C static library esp-idf\esp_https_ota\libesp_https_ota.a
+[20/38] Linking C static library esp-idf\esp_http_server\libesp_http_server.a
+[21/38] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build-idf\bootloader && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/bootloader/bootloader.bin"
+Bootloader binary size 0x5a80 bytes. 0x580 bytes (6%) free.
+[22/38] No install step for 'bootloader'
+[23/38] Linking C static library esp-idf\esp_http_client\libesp_http_client.a
+[24/38] Completed 'bootloader'
+[25/38] Linking C static library esp-idf\tcp_transport\libtcp_transport.a
+[26/38] Linking C static library esp-idf\esp_driver_i2s\libesp_driver_i2s.a
+[27/38] Building CXX object esp-idf/attitude/CMakeFiles/__idf_attitude.dir/attitude_estimator.cpp.obj
+[28/38] Building CXX object esp-idf/attitude/CMakeFiles/__idf_attitude.dir/quaternion.cpp.obj
+[29/38] Linking C static library esp-idf\attitude\libattitude.a
+[30/38] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/calibration.txt.S.obj
+[31/38] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/imu_application.cpp.obj
+[32/38] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[33/38] Linking C static library esp-idf\main\libmain.a
+[34/38] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: C:/esp/v6.1/esp-idf/components/bt/host/nimble/Kconfig.in:1428: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/esp/v6.1/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/esp/v6.1/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+Skipping linker fragment parsing, fragment files unchanged
+[35/38] Building C object CMakeFiles/mpu6050.elf.dir/project_elf_src_esp32p4.c.obj
+[36/38] Linking CXX executable mpu6050.elf
+[37/38] Generating binary image from built executable
+esptool v5.4.0
+Creating ESP32-P4 image...
+Merged 4 ELF sections.
+Successfully created ESP32-P4 image.
+Generated C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/mpu6050.bin
+[38/38] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\muham\Desktop\Drone\smal\mpu6050\build-idf && C:\Users\muham\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe C:/esp/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/partition_table/partition-table.bin C:/Users/muham/Desktop/Drone/smal/mpu6050/build-idf/mpu6050.bin"
+mpu6050.bin binary size 0x716e0 bytes. Smallest app partition is 0x100000 bytes. 0x8e920 bytes (56%) free.

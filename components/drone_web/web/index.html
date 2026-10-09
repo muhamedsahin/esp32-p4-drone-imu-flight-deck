@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#161d23">
+  <title>Flight Deck · Canlı yönelim</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23161d23'/%3E%3Cpath d='M8 8l16 16M24 8L8 24' stroke='%23c6f568' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+<aside class="rail">
+  <a class="brand" href="/" aria-label="Flight Deck ana sayfa"><span class="brand-mark">✣</span><span>FLIGHT<span class="brand-light">DECK</span><small>ORIENTATION LAB</small></span></a>
+  <div class="rail-label">ÇALIŞMA ALANI</div>
+  <a class="nav active" href="#overview"><span>◈</span> Canlı yönelim <span class="nav-dot"></span></a>
+  <a class="nav" href="#telemetry"><span>≋</span> Sensör verileri</a>
+  <button class="nav" id="help"><span>ⓘ</span> Nasıl çalışır?</button>
+  <div class="rail-bottom"><div class="board-icon">P4</div><strong>ESP32-P4 NANO</strong><span>ESP32-C6 · SDIO Wi-Fi</span><div class="rail-rule"></div><small>LOCAL-FIRST / NO CLOUD</small><p>Verin kartında.<br>Görüntü tarayıcında.</p></div>
+</aside>
+<main id="overview">
+  <header><div class="breadcrumb">Çalışma alanı <span>/</span> <strong>Canlı yönelim</strong></div><div class="header-status"><span class="status-dot" id="status-dot"></span><span id="connection">Kart bekleniyor</span><span class="local-tag">YEREL</span></div></header>
+  <div class="page-heading"><div><div class="eyebrow">SENSÖRDEN SAHNEYE</div><h1>Her açı, canlı.</h1><p>Drone’un duruşunu üç boyutta takip et.</p></div><button class="button" id="export" disabled><span>↓</span> CSV indir</button></div>
+  <div id="demo-banner" class="demo-banner" hidden>DEMO MODU · Bu görüntü simülasyondur, sensör verisi değildir.</div>
+  <section class="workspace">
+    <article class="card scene-card">
+      <div class="card-head"><div><span class="section-number">01</span><h2>3D yönelim</h2></div><span class="tiny-tag">BODY → WORLD</span></div>
+      <div class="scene" id="scene"><canvas id="drone" aria-label="Quaternion ile güncellenen üç boyutlu drone modeli"></canvas>
+        <div class="scene-top"><span class="view-label"><i></i> <span id="view-state">Ölçüm bekleniyor</span></span><span class="sample-tag" id="sample-age">— ms</span></div>
+        <div class="scene-wait" id="scene-wait"><span>◎</span><strong>Sensör bağlantısı bekleniyor</strong><small>Panel, karttan geçerli bir ölçüm geldiğinde canlanır.</small></div>
+        <div class="scene-bottom"><span>Sürükle: döndür &nbsp;·&nbsp; Kaydır: yakınlaştır</span><div class="axes-key"><b class="x">X</b><b class="y">Y</b><b class="z">Z</b></div></div>
+      </div>
+      <div class="scene-toolbar"><div class="segmented" aria-label="Kamera görünümü"><button class="selected" id="iso">Perspektif</button><button id="top">Üstten</button></div><div class="scene-actions"><button id="axes" aria-pressed="true" title="Gövde eksenlerini göster/gizle">Eksenler</button><button id="reset" title="Yalnız kamerayı sıfırla">↺ Kamera</button><button id="pause" aria-pressed="false">Ⅱ Dondur</button></div></div>
+      <div class="scene-note"><span class="lime-square"></span> Yeşil kollar: ön taraf (+X) <span class="note-right">Konum değil, yönelim gösterilir.</span></div>
+    </article>
+    <aside class="angles">
+      <article class="card angle-card roll"><div class="angle-top"><span><i></i> ROLL</span><small>X ekseni</small></div><div class="angle-value"><span id="roll">—</span><small>°</small></div><div class="angle-bottom"><span>Yatış</span><span class="angle-track"><b id="roll-bar"></b></span></div></article>
+      <article class="card angle-card pitch"><div class="angle-top"><span><i></i> PITCH</span><small>Y ekseni</small></div><div class="angle-value"><span id="pitch">—</span><small>°</small></div><div class="angle-bottom"><span>Eğim</span><span class="angle-track"><b id="pitch-bar"></b></span></div></article>
+      <article class="card angle-card yaw"><div class="angle-top"><span><i></i> YAW</span><small>Z ekseni</small></div><div class="angle-value"><span id="yaw">—</span><small>°</small></div><div class="angle-bottom"><span>Göreli dönüş</span><span class="angle-track"><b id="yaw-bar"></b></span></div></article>
+    </aside>
+  </section>
+  <section class="lower-grid" id="telemetry">
+    <article class="card history-card"><div class="card-head"><div><span class="section-number">02</span><h2>Açı geçmişi</h2></div><div class="legend"><span class="roll">● Roll</span><span class="pitch">● Pitch</span><span class="yaw">● Yaw</span></div></div><div class="chart-wrap"><canvas id="chart" aria-label="Son 12 saniyelik roll, pitch, yaw grafiği"></canvas></div><div class="chart-footer"><span>SON 12 SANİYE</span><span id="sample-count">0 geçerli örnek</span></div></article>
+    <article class="card sensor-card"><div class="card-head"><div><span class="section-number">03</span><h2>Sensör özeti</h2></div><span class="tiny-tag" id="temperature">— °C</span></div><div class="sensor-titles"><span>İVME <small>g</small></span><span>AÇISAL HIZ <small>rad/s</small></span></div><div class="sensor-row"><b class="x">X</b><span id="ax">—</span><span id="gx">—</span></div><div class="sensor-row"><b class="y">Y</b><span id="ay">—</span><span id="gy">—</span></div><div class="sensor-row"><b class="z">Z</b><span id="az">—</span><span id="gz">—</span></div><div class="sensor-summary"><span>|A| <b id="norm">— g</b></span><span id="calibration" class="calibration">Kalibrasyon bekleniyor</span></div></article>
+  </section>
+  <footer><span><i></i> QUATERNION FUSION <span class="footer-divider">/</span> <span id="source">Canlı sensör kaynağı</span></span><span>Yaw göreli referanstır; zamanla kayabilir.</span><button id="demo">Demoyu dene ↗</button></footer>
+</main>
+<dialog id="help-dialog"><button class="dialog-close" id="close-help" aria-label="Yardımı kapat">×</button><div class="eyebrow">FLIGHT DECK / KISA REHBER</div><h2>Kartın duruşu,<br>tek bir bakışta.</h2><p>IMU’nun kalibre edilmiş ivme ve gyro verileri mevcut yönelim filtresinde birleştirilir. Panel hesaplanmış quaternion’u alır; yeni bir sensör filtresi çalıştırmaz.</p><h3>Eksenler nasıl eşleşir?</h3><p>Modelin burnu sensörün +X, sol yanı +Y, üstü +Z yönüdür. Sensörü drone’a bu yönlerde monte et. Kamera döndürmek sensör referansını değiştirmez.</p><h3>Bilmen gerekenler</h3><p>Yaw başlangıçtaki yönüne göredir, pusula değildir. Euler açıları ±90° pitch çevresinde sıçrayabilir; 3D model quaternion ile devam eder. Bu panel bir uçuş kontrol sistemi değildir.</p><p>500 ms’den eski veya geçersiz ölçümler canlı gösterilmez. Dondur düğmesi sadece görünümü durdurur. CSV, bu tarayıcı oturumundaki son 3.600 geçerli örneği içerir.</p><div class="help-address">Aynı Wi-Fi ağı → kartın konsolda yazdığı adres → bu panel</div></dialog>
+</body></html>

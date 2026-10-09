@@ -1,0 +1,1540 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/drone_web/libdrone_web.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"idf_component_register",
+			"set_property",
+			"__component_set_dependencies",
+			"__component_set_all_dependencies",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"__component_add_include_dirs",
+			"add_cxx_compile_options",
+			"target_sources",
+			"target_add_binary_data"
+		],
+		"files" : 
+		[
+			"C:/esp/v6.1/esp-idf/tools/cmake/component.cmake",
+			"components/drone_web/CMakeLists.txt",
+			"C:/esp/v6.1/esp-idf/tools/cmake/utilities.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 494,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 527,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 365,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 344,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 362,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 347,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 479,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 480,
+				"parent" : 1
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 478,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 496,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 323,
+				"parent" : 11
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 497,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 323,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 347,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 344,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 344,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 344,
+				"parent" : 4
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 482,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 19
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 136,
+				"parent" : 21
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 136,
+				"parent" : 23
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 136,
+				"parent" : 25
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 136,
+				"parent" : 27
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 136,
+				"parent" : 29
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 136,
+				"parent" : 31
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "@\"C:/Users/muham/Desktop/Drone/smal/mpu6050/build/toolchain/cxxflags\" -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-shrink-wrap"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fmacro-prefix-map=C:/Users/muham/Desktop/Drone/smal/mpu6050=."
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fmacro-prefix-map=C:/esp/v6.1/esp-idf=/IDF"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-std=gnu++26"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-fuse-cxa-atexit"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "IDF_VER=\"v6.1\""
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_GLIBCXX_HAVE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_GLIBCXX_USE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/config"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/drone_web/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/drone_web/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_libc/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/ldo/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/debug_probe/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/etm/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/power_supply/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/modem/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/private_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32p4/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/heap/tlsf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4/register/hw_ver1"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/include/riscv"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_stdio/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpio/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpio/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_usb/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_usb/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_pmu/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_pmu/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_uart/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_dma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_dma/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/sys"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/orientation/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/imu/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_i2c/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_i2c/esp32p4/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_i2c/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/attitude/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_http_server/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/esp/v6.1/esp-idf/components/http_parser"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/remote/include/injected"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/nan_app/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/remote/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_timer/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/esp/v6.1/esp-idf/components/nvs_flash/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_partition/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_blockdev/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/managed_components/espressif__esp_hosted/host"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/managed_components/espressif__esp_hosted/host/api/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_sdmmc/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_sdmmc/legacy/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_sd_intf/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/sdmmc/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_sd/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_sd/esp32p4/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_spi/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_pm/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpspi/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpspi/esp32p4/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_dma/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_uart/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/vfs/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_gpio/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "@\"C:/Users/muham/Desktop/Drone/smal/mpu6050/build/toolchain/asmflags\""
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-error=extra"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-shrink-wrap"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fmacro-prefix-map=C:/Users/muham/Desktop/Drone/smal/mpu6050=."
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fmacro-prefix-map=C:/esp/v6.1/esp-idf=/IDF"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-fno-tree-switch-conversion"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "IDF_VER=\"v6.1\""
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_GLIBCXX_HAVE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_GLIBCXX_USE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/build/config"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/drone_web/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/drone_web/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_libc/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/config/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/ldo/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/debug_probe/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/etm/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/tuning_scheme_impl/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_intr/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/power_supply/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/modem/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/port/esp32p4/private_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/port/esp32p4/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/heap/tlsf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/soc/esp32p4/register/hw_ver1"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4/include/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_rom/esp32p4"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/include/riscv"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_stdio/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/riscv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpio/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpio/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_usb/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_usb/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_pmu/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_pmu/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_regi2c/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_uart/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_ana_conv/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_dma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_dma/esp32p4/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/esp/v6.1/esp-idf/components/lwip/port/esp32xx/include/sys"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/orientation/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/imu/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_i2c/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_i2c/esp32p4/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_i2c/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/components/attitude/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_http_server/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/esp/v6.1/esp-idf/components/http_parser"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/remote/include/injected"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/nan_app/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_wifi/remote/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_timer/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/esp/v6.1/esp-idf/components/nvs_flash/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_partition/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_blockdev/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/managed_components/espressif__esp_hosted/host"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/muham/Desktop/Drone/smal/mpu6050/managed_components/espressif__esp_hosted/host/api/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_sdmmc/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_sdmmc/legacy/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_sd_intf/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/sdmmc/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_sd/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_sd/esp32p4/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_spi/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_pm/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpspi/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_hal_gpspi/esp32p4/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_dma/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_uart/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/vfs/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/esp/v6.1/esp-idf/components/esp_driver_gpio/include"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_driver_spi::@a108b58494cdd93e678c"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "__idf_esp_driver_i2c::@823c83e66a2d740aac64"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_hal_twai::@51ba563199ada2b3f0ba"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_driver::@76403182dd99a02c203e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_hal_sd::@1ada79c52e603a3e38c7"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_sdmmc::@89ed5bca1750ffbc7db6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_driver_sd_intf::@9cb2f063b9dd7d282253"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_driver_sdmmc::@6ccb6c8602dfb90db4d7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "__idf_riscv::@5eeb1a2ca709d020776e"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "__idf_imu::@10eef089b95aaa63e19e"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "__idf_orientation::@e81b47400b5ec7b03557"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "__idf_attitude::@bf4411f5cdbf6582f0a9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_hosted::@cd1478f59ad33d94018c"
+		}
+	],
+	"id" : "__idf_drone_web::@647b7a20940964ffce7b",
+	"name" : "__idf_drone_web",
+	"nameOnDisk" : "libdrone_web.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/drone_web",
+		"source" : "components/drone_web"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/drone_web/drone_dashboard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/drone_web/wifi_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/drone_web/network_config.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "build/wifi.txt.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "build/index.html.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "build/styles.css.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 28,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "build/app.js.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 30,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "build/math.js.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "build/renderer.js.S",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "wifi.txt",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "components/drone_web/web/index.html",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "components/drone_web/web/styles.css",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "components/drone_web/web/app.js",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "components/drone_web/web/math.js",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "components/drone_web/web/renderer.js",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

@@ -1,0 +1,7 @@
+C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\driver_tests.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_driver_tests.dir\Release\driver_tests.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\tests\fakes\fake_esp.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_driver_tests.dir\Release\fake_esp.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_driver_tests.dir\Release\mpu6050.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_driver_tests.dir\Release\mpu6050_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\mpu6050_storage.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_driver_tests.dir\Release\mpu6050_storage.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_driver_tests.dir\Release\imu_calibration.obj
+C:\Users\muham\Desktop\Drone\smal\mpu6050\components\imu\imu_calibration_record.cpp;C:\Users\muham\Desktop\Drone\smal\mpu6050\build\host-tests\imu_driver_tests.dir\Release\imu_calibration_record.obj
