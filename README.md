@@ -6,6 +6,12 @@ ESP32-P4-NANO üzerinde MPU6050/MPU6500 verilerini okuyup kalibre eden, gyro ve 
 
 > Bu proje roll, pitch ve başlangıç yönüne göre yaw üretir. GPS konumu, dünya üzerinde X/Y/Z yer değiştirmesi, mutlak kuzey yönü veya motor kontrolü üretmez. Web paneli bir gözlem aracıdır; uçuş kontrol sistemi olarak doğrulanmamıştır.
 
+<p align="center">
+  <img src="Ekran%20görüntüsü%202026-10-09%20213033.png" alt="Drone IMU Flight Deck 3D web paneli" width="800">
+  <br>
+  <em>Yerel ağdaki 3D web paneli: yönelim, ivme/gyro ölçümleri ve canlı grafik</em>
+</p>
+
 ## Kısa bakış
 
 - MPU6050 (`WHO_AM_I=0x68`) ve MPU6500 (`WHO_AM_I=0x70`) kimliklerini ayırt eder. Sınıf adı `MPU6050`, mevcut API ile uyum için korunmuştur.
